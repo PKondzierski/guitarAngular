@@ -9,7 +9,7 @@ import { Role } from './register/role';
   providedIn: 'root'
 })
 export class SecurityService {
-  ENDPOINT='http://localhost:8080';
+  ENDPOINT='https://guitar-kondzierski.herokuapp.com';
 
   constructor(private http: HttpClient) { }
 
