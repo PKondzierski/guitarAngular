@@ -1,0 +1,26 @@
+@use 'sass:map';
+@use '~@angular/material' as mat;
+
+@mixin basicInformation($theme) {
+
+    $color-config: mat.get-color-config($theme);
+    $warn-palette: map.get($color-config, 'warn');
+    $accent-palette: map.get($color-config, 'accent');
+
+
+    .response-error{
+        background-color: mat.get-color-from-palette($warn-palette,600);
+    }
+
+    // circle{
+    //     fill: mat.get-color-from-palette($primary-palette,900);
+    // }
+    circle{
+        fill: mat.get-color-from-palette($accent-palette,400);
+      }
+
+      .chord-text-error{
+          color: mat.get-color-from-palette($warn-palette,600);
+          font-weight: bolder;
+      }
+}

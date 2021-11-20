@@ -1,0 +1,35 @@
+<mat-toolbar-row *ngIf="role && role === LECTURER">
+  <button  class="dropdown-button" routerLink="/mycourses" mat-button>
+    <mat-icon>book</mat-icon>
+    <span class="dropdown-text">Moje kursy</span>
+  </button>
+</mat-toolbar-row>
+<button *ngIf="role && role === ADMIN" routerLink="/admin" mat-button>
+  <mat-icon>perm_identity</mat-icon>
+  <span>Panel admina</span>
+</button>
+
+<mat-toolbar-row *ngIf="role">
+  <button  class="dropdown-button" routerLink="/courses" mat-button>
+    <mat-icon>school icon</mat-icon>
+    <span class="dropdown-text">Kursy</span>
+  </button>
+</mat-toolbar-row>
+<mat-toolbar-row>
+  <button class="dropdown-button" mat-button>
+    <mat-icon>music_note</mat-icon>
+    <span class="dropdown-text">Akordy</span>
+  </button>
+</mat-toolbar-row>
+<mat-toolbar-row *ngIf="role">
+  <button  (click)="tokenStorage.logout()" class="dropdown-button" mat-button>
+    <mat-icon>logout</mat-icon>
+    <span class="dropdown-text">Wyloguj</span>
+  </button>
+</mat-toolbar-row>
+<mat-toolbar-row *ngIf="!role">
+  <button  routerLink="/login" class="dropdown-button" mat-button>
+    <mat-icon>login</mat-icon>
+    <span class="dropdown-text">Zaloguj</span>
+  </button>
+</mat-toolbar-row>

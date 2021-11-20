@@ -1,0 +1,21 @@
+
+/* Add application styles & imports to this file! */
+// @import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import '~@vime/core/themes/default.css';
+
+html {
+  min-height: 100vh;
+}
+
+body {
+  background: #fafafa;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: Times New Roman;
+  box-sizing: border-box;
+}
+
+input:-webkit-autofill {
+  transition: all 0s 5000000s;
+}

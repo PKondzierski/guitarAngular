@@ -1,0 +1,20 @@
+<div [ngClass]="!theatherMode && !isMobile ? 'right' : isMobile ? 'mobile' : 'bottom'">
+  <mat-accordion *ngIf="courseService.course && courseService.course.sections">
+    <mat-expansion-panel
+      *ngFor="let section of courseService.course.sections"
+      class="expansion-panel"
+      (opened)="panelOpenState = true"
+      (closed)="panelOpenState = false"
+    >
+      <mat-expansion-panel-header>
+        <mat-panel-title><span>{{section.name}}<span *ngIf="section.duration"> | łączny czas {{ section.duration | secondsToMinutes }}</span> </span></mat-panel-title>
+        <mat-panel-description></mat-panel-description>
+      </mat-expansion-panel-header>
+      <ng-container *ngIf="section.lessons">
+      <div (click)="courseService.actualLesson.next(lesson)" *ngFor="let lesson of section.lessons" class="content">
+        <span class="name-time">{{ lesson.name }}  <span *ngIf="lesson.duration">| {{ lesson.duration | secondsToMinutes }}</span></span>
+      </div>
+    </ng-container>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>

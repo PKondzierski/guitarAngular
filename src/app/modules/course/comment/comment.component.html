@@ -1,0 +1,38 @@
+<div *ngIf = "courseService.course" [ngClass]= "isTheather? 'container-theather' : ''" id="container">
+    <mat-form-field style="width: calc(100% - 16px); padding: 0 0 0 16px;">
+        <mat-label>Komentarz</mat-label>
+        <textarea [(ngModel)] = "newComment"  rows="1" matInput></textarea>
+        <button  style="font-size: 30px; width: 30px; height: 30px; line-height: 30px;" (click)="addComment()" matSuffix mat-icon-button>
+            <mat-icon>add_circle_outline</mat-icon>
+          </button>
+      </mat-form-field>    
+      <mat-list>
+      <mat-list-item style="height: fit-content; width: 100%;" *ngFor="let comment of courseService.comments; let i = index">
+          <div style="display: flex; flex-direction: column; width: 100%;">
+             <span style="font-size: 1.5rem; margin-bottom: 10px;"> {{comment.username}} </span>
+          {{comment.comment}}
+          <div style="display: flex; justify-content: space-between;">
+          <span style="font-size: 0.8rem; margin: 5px 0;" > {{comment.created | date:'dd/MM/yyyy : HH:mm'}} </span> 
+          <button (click)="expanded[i] = !expanded[i]" mat-icon-button style="font-size: 40px; width: 40px; height: 40px; line-height: 40px;">
+            <mat-icon *ngIf="!expanded[i]">keyboard_arrow_left</mat-icon>
+            <mat-icon *ngIf="expanded[i]">keyboard_arrow_down</mat-icon>
+        </button>
+        </div>
+        <ng-container *ngIf="expanded[i]">
+          <mat-form-field style="width: calc(100% - 20px); padding: 0 0 0 16px; margin-left:20px">
+            <mat-label>Odpowiedź</mat-label>
+            <textarea [(ngModel)] = "newAnswer"  rows="1" matInput></textarea>
+            <button  style="font-size: 30px; width: 30px; height: 30px; line-height: 30px;" (click)="addAnswer(comment)" matSuffix mat-icon-button>
+                <mat-icon>add_circle_outline</mat-icon>
+              </button>
+          </mat-form-field>    
+            <div style="margin-left: 20px;" *ngFor = "let subComment of comment.subComments">
+                <app-sub-comment [comment] = subComment></app-sub-comment>
+            </div>
+        </ng-container>
+
+          <mat-divider></mat-divider>
+        </div>
+      </mat-list-item>
+  </mat-list>
+</div>

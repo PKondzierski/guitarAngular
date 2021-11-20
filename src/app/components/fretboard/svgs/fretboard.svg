@@ -1,0 +1,538 @@
+<!-- <svg id="fret-board" preserveAspectRatio="none" viewBox="0 0 506.5 45" xmlns="http://www.w3.org/2000/svg">
+<line id="1E1" fill="none" stroke="#000" x1="6.71795" y1="4.4359" x2="26.58106" y2="4.4359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="1B2" fill="none" stroke="#000" x1="6.71795" y1="9.70192" x2="26.58106" y2="9.70192" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="1G3" fill="none" stroke="#000" x1="6.71795" y1="14.9359" x2="26.58106" y2="14.9359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="1D4" fill="none" stroke="#000" x1="6.71795" y1="20.20193" x2="26.58106" y2="20.20193" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="1A5" fill="none" stroke="#000" x1="6.71795" y1="25.4359" x2="26.58106" y2="25.4359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="1E6" fill="none" stroke="#000" x1="6.71795" y1="30.70193" x2="26.58106" y2="30.70193" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line fill="none" x1="26.99743" y1="3.87317" x2="26.99743" y2="31.19346" stroke-linejoin="undefined" stroke-linecap="undefined" stroke="#666666"/>
+<line id="2E1" fill="none" stroke="#000" x1="27.46784" y1="4.4359" x2="47.33095" y2="4.4359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="2B2" fill="none" stroke="#000" x1="27.46784" y1="9.70192" x2="47.33095" y2="9.70192" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="2G3" fill="none" stroke="#000" x1="27.46784" y1="14.9359" x2="47.33095" y2="14.9359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="2D4" fill="none" stroke="#000" x1="27.46784" y1="20.20193" x2="47.33095" y2="20.20193" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="2A5" fill="none" stroke="#000" x1="27.46784" y1="25.4359" x2="47.33095" y2="25.4359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="2E6" fill="none" stroke="#000" x1="27.46784" y1="30.70193" x2="47.33095" y2="30.70193" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line fill="none" x1="47.87231" y1="3.87317" x2="47.87231" y2="31.19346" stroke-linejoin="undefined" stroke-linecap="undefined" stroke="#666666"/>
+<line id="3E1" fill="none" stroke="#000" x1="48.34273" y1="4.4359" x2="68.20584" y2="4.4359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="3B2" fill="none" stroke="#000" x1="48.34273" y1="9.70192" x2="68.20584" y2="9.70192" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="3G3" fill="none" stroke="#000" x1="48.34273" y1="14.9359" x2="68.20584" y2="14.9359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="3D4" fill="none" stroke="#000" x1="48.34273" y1="20.20193" x2="68.20584" y2="20.20193" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="3A5" fill="none" stroke="#000" x1="48.34273" y1="25.4359" x2="68.20584" y2="25.4359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="3E6" fill="none" stroke="#000" x1="48.34273" y1="30.70193" x2="68.20584" y2="30.70193" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line fill="none" x1="68.62221" y1="3.87317" x2="68.62221" y2="31.19346" stroke-linejoin="undefined" stroke-linecap="undefined" stroke="#666666"/>
+<line id="4E1" fill="none" stroke="#000" x1="69.09262" y1="4.4359" x2="88.95573" y2="4.4359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="4B2" fill="none" stroke="#000" x1="69.09262" y1="9.70192" x2="88.95573" y2="9.70192" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="4G3" fill="none" stroke="#000" x1="69.09262" y1="14.9359" x2="88.95573" y2="14.9359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="4D4" fill="none" stroke="#000" x1="69.09262" y1="20.20193" x2="88.95573" y2="20.20193" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="4A5" fill="none" stroke="#000" x1="69.09262" y1="25.4359" x2="88.95573" y2="25.4359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="4E6" fill="none" stroke="#000" x1="69.09262" y1="30.70193" x2="88.95573" y2="30.70193" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line fill="none" x1="89.4971" y1="3.87317" x2="89.4971" y2="31.19346" stroke-linejoin="undefined" stroke-linecap="undefined" stroke="#666666"/>
+<line id="5E1" fill="none" stroke="#000" x1="89.96751" y1="4.4359" x2="109.83062" y2="4.4359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="5B2" fill="none" stroke="#000" x1="89.96751" y1="9.70192" x2="109.83062" y2="9.70192" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="5G3" fill="none" stroke="#000" x1="89.96751" y1="14.9359" x2="109.83062" y2="14.9359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="5D4" fill="none" stroke="#000" x1="89.96751" y1="20.20193" x2="109.83062" y2="20.20193" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="5A5" fill="none" stroke="#000" x1="89.96751" y1="25.4359" x2="109.83062" y2="25.4359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="5E6" fill="none" stroke="#000" x1="89.96751" y1="30.70193" x2="109.83062" y2="30.70193" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line fill="none" x1="110.24699" y1="3.87317" x2="110.24699" y2="31.19346" stroke-linejoin="undefined" stroke-linecap="undefined" stroke="#666666"/>
+<line id="6E1" fill="none" stroke="#000" x1="110.7174" y1="4.4359" x2="130.58051" y2="4.4359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="6B2" fill="none" stroke="#000" x1="110.7174" y1="9.70192" x2="130.58051" y2="9.70192" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="6G3" fill="none" stroke="#000" x1="110.7174" y1="14.9359" x2="130.58051" y2="14.9359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="6D4" fill="none" stroke="#000" x1="110.7174" y1="20.20193" x2="130.58051" y2="20.20193" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="6A5" fill="none" stroke="#000" x1="110.7174" y1="25.4359" x2="130.58051" y2="25.4359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="6E6" fill="none" stroke="#000" x1="110.7174" y1="30.70193" x2="130.58051" y2="30.70193" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line fill="none" x1="131.12188" y1="3.87317" x2="131.12188" y2="31.19346" stroke-linejoin="undefined" stroke-linecap="undefined" stroke="#666666"/>
+<line id="7E1" fill="none" stroke="#000" x1="131.59229" y1="4.4359" x2="151.4554" y2="4.4359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="7B2" fill="none" stroke="#000" x1="131.59229" y1="9.70192" x2="151.4554" y2="9.70192" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="7G3" fill="none" stroke="#000" x1="131.59229" y1="14.9359" x2="151.4554" y2="14.9359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="7D4" fill="none" stroke="#000" x1="131.59229" y1="20.20193" x2="151.4554" y2="20.20193" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="7A5" fill="none" stroke="#000" x1="131.59229" y1="25.4359" x2="151.4554" y2="25.4359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="7E6" fill="none" stroke="#000" x1="131.59229" y1="30.70193" x2="151.4554" y2="30.70193" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line fill="none" x1="151.87177" y1="3.87317" x2="151.87177" y2="31.19346" stroke-linejoin="undefined" stroke-linecap="undefined" stroke="#666666"/>
+<line id="8E1" fill="none" stroke="#000" x1="152.34218" y1="4.4359" x2="172.20529" y2="4.4359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="8B2" fill="none" stroke="#000" x1="152.34218" y1="9.70192" x2="172.20529" y2="9.70192" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="8G3" fill="none" stroke="#000" x1="152.34218" y1="14.9359" x2="172.20529" y2="14.9359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="8D4" fill="none" stroke="#000" x1="152.34218" y1="20.20193" x2="172.20529" y2="20.20193" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="8A5" fill="none" stroke="#000" x1="152.34218" y1="25.4359" x2="172.20529" y2="25.4359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="8E6" fill="none" stroke="#000" x1="152.34218" y1="30.70193" x2="172.20529" y2="30.70193" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line fill="none" x1="172.74666" y1="3.87317" x2="172.74666" y2="31.19346" stroke-linejoin="undefined" stroke-linecap="undefined" stroke="#666666"/>
+<line id="9E1" fill="none" stroke="#000" x1="173.21707" y1="4.4359" x2="193.08018" y2="4.4359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="9B2" fill="none" stroke="#000" x1="173.21707" y1="9.70192" x2="193.08018" y2="9.70192" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="9G3" fill="none" stroke="#000" x1="173.21707" y1="14.9359" x2="193.08018" y2="14.9359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="9D4" fill="none" stroke="#000" x1="173.21707" y1="20.20193" x2="193.08018" y2="20.20193" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="9A5" fill="none" stroke="#000" x1="173.21707" y1="25.4359" x2="193.08018" y2="25.4359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="9E6" fill="none" stroke="#000" x1="173.21707" y1="30.70193" x2="193.08018" y2="30.70193" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line fill="none" x1="193.49654" y1="3.87317" x2="193.49654" y2="31.19346" stroke-linejoin="undefined" stroke-linecap="undefined" stroke="#666666"/>
+<line id="10E1" fill="none" stroke="#000" x1="193.96696" y1="4.4359" x2="213.83006" y2="4.4359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="10B2" fill="none" stroke="#000" x1="193.96696" y1="9.70192" x2="213.83006" y2="9.70192" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="10G3" fill="none" stroke="#000" x1="193.96696" y1="14.9359" x2="213.83006" y2="14.9359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="10D4" fill="none" stroke="#000" x1="193.96696" y1="20.20193" x2="213.83006" y2="20.20193" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="10A5" fill="none" stroke="#000" x1="193.96696" y1="25.4359" x2="213.83006" y2="25.4359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="10E6" fill="none" stroke="#000" x1="193.96696" y1="30.70193" x2="213.83006" y2="30.70193" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line fill="none" x1="214.37143" y1="3.87317" x2="214.37143" y2="31.19346" stroke-linejoin="undefined" stroke-linecap="undefined" stroke="#666666"/>
+<line id="11E1" fill="none" stroke="#000" x1="214.84185" y1="4.4359" x2="234.70496" y2="4.4359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="11B2" fill="none" stroke="#000" x1="214.84185" y1="9.70192" x2="234.70496" y2="9.70192" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="11G3" fill="none" stroke="#000" x1="214.84185" y1="14.9359" x2="234.70496" y2="14.9359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="11D4" fill="none" stroke="#000" x1="214.84185" y1="20.20193" x2="234.70496" y2="20.20193" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="11A5" fill="none" stroke="#000" x1="214.84185" y1="25.4359" x2="234.70496" y2="25.4359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="11E6" fill="none" stroke="#000" x1="214.84185" y1="30.70193" x2="234.70496" y2="30.70193" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line fill="none" x1="235.12133" y1="3.87317" x2="235.12133" y2="31.19346" stroke-linejoin="undefined" stroke-linecap="undefined" stroke="#666666"/>
+<line id="12E1" fill="none" stroke="#000" x1="235.59174" y1="4.4359" x2="255.45485" y2="4.4359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="12B2" fill="none" stroke="#000" x1="235.59174" y1="9.70192" x2="255.45485" y2="9.70192" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="12G3" fill="none" stroke="#000" x1="235.59174" y1="14.9359" x2="255.45485" y2="14.9359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="12D4" fill="none" stroke="#000" x1="235.59174" y1="20.20193" x2="255.45485" y2="20.20193" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="12A5" fill="none" stroke="#000" x1="235.59174" y1="25.4359" x2="255.45485" y2="25.4359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="12E6" fill="none" stroke="#000" x1="235.59174" y1="30.70193" x2="255.45485" y2="30.70193" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line fill="none" x1="255.99621" y1="3.87317" x2="255.99621" y2="31.19346" stroke-linejoin="undefined" stroke-linecap="undefined" stroke="#666666"/>
+<line id="13E1" fill="none" stroke="#000" x1="256.46663" y1="4.4359" x2="276.32974" y2="4.4359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="13B2" fill="none" stroke="#000" x1="256.46663" y1="9.70192" x2="276.32974" y2="9.70192" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="13G3" fill="none" stroke="#000" x1="256.46663" y1="14.9359" x2="276.32974" y2="14.9359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="13D4" fill="none" stroke="#000" x1="256.46663" y1="20.20193" x2="276.32974" y2="20.20193" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="13A5" fill="none" stroke="#000" x1="256.46663" y1="25.4359" x2="276.32974" y2="25.4359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="13E6" fill="none" stroke="#000" x1="256.46663" y1="30.70193" x2="276.32974" y2="30.70193" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line fill="none" x1="276.74611" y1="3.87317" x2="276.74611" y2="31.19346" stroke-linejoin="undefined" stroke-linecap="undefined" stroke="#666666"/>
+<line id="14E1" fill="none" stroke="#000" x1="277.21652" y1="4.4359" x2="297.07963" y2="4.4359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="14B2" fill="none" stroke="#000" x1="277.21652" y1="9.70192" x2="297.07963" y2="9.70192" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="14G3" fill="none" stroke="#000" x1="277.21652" y1="14.9359" x2="297.07963" y2="14.9359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="14D4" fill="none" stroke="#000" x1="277.21652" y1="20.20193" x2="297.07963" y2="20.20193" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="14A5" fill="none" stroke="#000" x1="277.21652" y1="25.4359" x2="297.07963" y2="25.4359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="14E6" fill="none" stroke="#000" x1="277.21652" y1="30.70193" x2="297.07963" y2="30.70193" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line fill="none" x1="297.62099" y1="3.87317" x2="297.62099" y2="31.19346" stroke-linejoin="undefined" stroke-linecap="undefined" stroke="#666666"/>
+<line id="15E1" fill="none" stroke="#000" x1="298.09141" y1="4.4359" x2="317.95452" y2="4.4359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="15B2" fill="none" stroke="#000" x1="298.09141" y1="9.70192" x2="317.95452" y2="9.70192" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="15G4" fill="none" stroke="#000" x1="298.09141" y1="14.9359" x2="317.95452" y2="14.9359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="15D4" fill="none" stroke="#000" x1="298.09141" y1="20.20193" x2="317.95452" y2="20.20193" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="15A5" fill="none" stroke="#000" x1="298.09141" y1="25.4359" x2="317.95452" y2="25.4359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="15E6" fill="none" stroke="#000" x1="298.09141" y1="30.70193" x2="317.95452" y2="30.70193" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line fill="none" x1="318.37089" y1="3.87317" x2="318.37089" y2="31.19346" stroke-linejoin="undefined" stroke-linecap="undefined" stroke="#666666"/>
+<line id="16E1" fill="none" stroke="#000" x1="318.8413" y1="4.4359" x2="338.70441" y2="4.4359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="16B2" fill="none" stroke="#000" x1="318.8413" y1="9.70192" x2="338.70441" y2="9.70192" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="16G3" fill="none" stroke="#000" x1="318.8413" y1="14.9359" x2="338.70441" y2="14.9359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="16D4" fill="none" stroke="#000" x1="318.8413" y1="20.20193" x2="338.70441" y2="20.20193" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="16A5" fill="none" stroke="#000" x1="318.8413" y1="25.4359" x2="338.70441" y2="25.4359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="16E6" fill="none" stroke="#000" x1="318.8413" y1="30.70193" x2="338.70441" y2="30.70193" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line fill="none" x1="339.24578" y1="3.87317" x2="339.24578" y2="31.19346" stroke-linejoin="undefined" stroke-linecap="undefined" stroke="#666666"/>
+<line id="17E1" fill="none" stroke="#000" x1="339.71573" y1="4.4359" x2="359.57884" y2="4.4359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="17B2" fill="none" stroke="#000" x1="339.71573" y1="9.70192" x2="359.57884" y2="9.70192" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="17G3" fill="none" stroke="#000" x1="339.71573" y1="14.9359" x2="359.57884" y2="14.9359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="17D4" fill="none" stroke="#000" x1="339.71573" y1="20.20193" x2="359.57884" y2="20.20193" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="17A5" fill="none" stroke="#000" x1="339.71573" y1="25.4359" x2="359.57884" y2="25.4359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="17E6" fill="none" stroke="#000" x1="339.71573" y1="30.70193" x2="359.57884" y2="30.70193" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line fill="none" x1="359.99521" y1="3.87317" x2="359.99521" y2="31.19346" stroke-linejoin="undefined" stroke-linecap="undefined" stroke="#666666"/>
+<line id="18E1" fill="none" stroke="#000" x1="360.46562" y1="4.4359" x2="380.32873" y2="4.4359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="18B2" fill="none" stroke="#000" x1="360.46562" y1="9.70192" x2="380.32873" y2="9.70192" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="18G3" fill="none" stroke="#000" x1="360.46562" y1="14.9359" x2="380.32873" y2="14.9359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="18D4" fill="none" stroke="#000" x1="360.46562" y1="20.20193" x2="380.32873" y2="20.20193" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="18A5" fill="none" stroke="#000" x1="360.46562" y1="25.4359" x2="380.32873" y2="25.4359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="18E6" fill="none" stroke="#000" x1="360.46562" y1="30.70193" x2="380.32873" y2="30.70193" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line fill="none" x1="380.8701" y1="3.87317" x2="380.8701" y2="31.19346" stroke-linejoin="undefined" stroke-linecap="undefined" stroke="#666666"/>
+<line id="19E1" fill="none" stroke="#000" x1="381.34051" y1="4.4359" x2="401.20362" y2="4.4359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="19B2" fill="none" stroke="#000" x1="381.34051" y1="9.70192" x2="401.20362" y2="9.70192" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="19G3" fill="none" stroke="#000" x1="381.34051" y1="14.9359" x2="401.20362" y2="14.9359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="19D4" fill="none" stroke="#000" x1="381.34051" y1="20.20193" x2="401.20362" y2="20.20193" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="19A5" fill="none" stroke="#000" x1="381.34051" y1="25.4359" x2="401.20362" y2="25.4359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="19E6" fill="none" stroke="#000" x1="381.34051" y1="30.70193" x2="401.20362" y2="30.70193" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line fill="none" x1="401.61999" y1="3.87317" x2="401.61999" y2="31.19346" stroke-linejoin="undefined" stroke-linecap="undefined" stroke="#666666"/>
+<line id="20E1" fill="none" stroke="#000" x1="402.0904" y1="4.4359" x2="421.95351" y2="4.4359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="20B2" fill="none" stroke="#000" x1="402.0904" y1="9.70192" x2="421.95351" y2="9.70192" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="20G3" fill="none" stroke="#000" x1="402.0904" y1="14.9359" x2="421.95351" y2="14.9359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="20D4" fill="none" stroke="#000" x1="402.0904" y1="20.20193" x2="421.95351" y2="20.20193" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="20A5" fill="none" stroke="#000" x1="402.0904" y1="25.4359" x2="421.95351" y2="25.4359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="20E6" fill="none" stroke="#000" x1="402.0904" y1="30.70193" x2="421.95351" y2="30.70193" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line fill="none" x1="422.49488" y1="3.87317" x2="422.49488" y2="31.19346" stroke-linejoin="undefined" stroke-linecap="undefined" stroke="#666666"/>
+<line id="21E1" fill="none" stroke="#000" x1="422.96529" y1="4.4359" x2="442.8284" y2="4.4359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="21B2" fill="none" stroke="#000" x1="422.96529" y1="9.70192" x2="442.8284" y2="9.70192" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="21G3" fill="none" stroke="#000" x1="422.96529" y1="14.9359" x2="442.8284" y2="14.9359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="21D4" fill="none" stroke="#000" x1="422.96529" y1="20.20193" x2="442.8284" y2="20.20193" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="21A5" fill="none" stroke="#000" x1="422.96529" y1="25.4359" x2="442.8284" y2="25.4359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="21E6" fill="none" stroke="#000" x1="422.96529" y1="30.70193" x2="442.8284" y2="30.70193" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line fill="none" x1="443.24477" y1="3.87317" x2="443.24477" y2="31.19346" stroke-linejoin="undefined" stroke-linecap="undefined" stroke="#666666"/>
+<line id="22E1" fill="none" stroke="#000" x1="443.71518" y1="4.4359" x2="463.57829" y2="4.4359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="22B2" fill="none" stroke="#000" x1="443.71518" y1="9.70192" x2="463.57829" y2="9.70192" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="22G3" fill="none" stroke="#000" x1="443.71518" y1="14.9359" x2="463.57829" y2="14.9359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="22D4" fill="none" stroke="#000" x1="443.71518" y1="20.20193" x2="463.57829" y2="20.20193" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="22A5" fill="none" stroke="#000" x1="443.71518" y1="25.4359" x2="463.57829" y2="25.4359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="22E6" fill="none" stroke="#000" x1="443.71518" y1="30.70193" x2="463.57829" y2="30.70193" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line fill="none" x1="464.11966" y1="3.87317" x2="464.11966" y2="31.19346" stroke-linejoin="undefined" stroke-linecap="undefined" stroke="#666666"/>
+<line id="23E1" fill="none" stroke="#000" x1="464.59008" y1="4.4359" x2="484.45318" y2="4.4359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="23B2" fill="none" stroke="#000" x1="464.59008" y1="9.70192" x2="484.45318" y2="9.70192" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="23G3" fill="none" stroke="#000" x1="464.59008" y1="14.9359" x2="484.45318" y2="14.9359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="23D4" fill="none" stroke="#000" x1="464.59008" y1="20.20193" x2="484.45318" y2="20.20193" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="23A5" fill="none" stroke="#000" x1="464.59008" y1="25.4359" x2="484.45318" y2="25.4359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="23E6" fill="none" stroke="#000" x1="464.59008" y1="30.70193" x2="484.45318" y2="30.70193" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line fill="none" x1="484.86955" y1="3.87317" x2="484.86955" y2="31.19346" stroke-linejoin="undefined" stroke-linecap="undefined" stroke="#666666"/>
+<line id="24E1" fill="none" stroke="#000" x1="485.33996" y1="4.4359" x2="505.20307" y2="4.4359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="24B2" fill="none" stroke="#000" x1="485.33996" y1="9.70192" x2="505.20307" y2="9.70192" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="24G3" fill="none" stroke="#000" x1="485.33996" y1="14.9359" x2="505.20307" y2="14.9359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="24D4" fill="none" stroke="#000" x1="485.33996" y1="20.20193" x2="505.20307" y2="20.20193" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="24A5" fill="none" stroke="#000" x1="485.33996" y1="25.4359" x2="505.20307" y2="25.4359" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line id="24E6" fill="none" stroke="#000" x1="485.33996" y1="30.70193" x2="505.20307" y2="30.70193" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+<line fill="none" x1="505.74444" y1="3.87317" x2="505.74444" y2="31.19346" stroke-linejoin="undefined" stroke-linecap="undefined" stroke="#666666"/>
+<line fill="none" x1="4.80609" y1="3.87317" x2="4.80609" y2="31.19346" stroke-linejoin="undefined" stroke-linecap="undefined" stroke-width="4" stroke="#666666"/>
+<text fill="#000000" x="-64.51534" y="-31.33247" font-size="24" font-family="Noto Sans JP" text-anchor="start" xml:space="preserve" stroke="#666666" transform="matrix(0.396606 0 0 0.342335 40.0478 47.8302)">I</text>
+<text fill="#000000" x="34.08443" y="-31.30685" font-size="24" font-family="Noto Sans JP" text-anchor="start" xml:space="preserve" stroke="#666666" transform="matrix(0.396606 0 0 0.342335 40.0478 47.8302)">III</text>
+<text fill="#000000" x="142.23894" y="-31.33247" font-size="24" font-family="Noto Sans JP" text-anchor="start" xml:space="preserve" stroke="#666666" transform="matrix(0.396606 0 0 0.342335 40.0478 47.8302)">V</text>
+<text fill="#000000" x="239.26284" y="-31.30685" font-size="24" font-family="Noto Sans JP" text-anchor="start" xml:space="preserve" stroke="#666666" transform="matrix(0.396606 0 0 0.342335 40.0478 47.8302)">VII</text>
+<text fill="#000000" x="347.99794" y="-31.30685" font-size="24" font-family="Noto Sans JP" text-anchor="start" xml:space="preserve" stroke="#666666" transform="matrix(0.396606 0 0 0.342335 40.0478 47.8302)">IX</text>
+<text fill="#000000" x="453.26612" y="-31.30685" font-size="24" font-family="Noto Sans JP" text-anchor="start" xml:space="preserve" stroke="#666666" transform="matrix(0.396606 0 0 0.342335 40.0478 47.8302)">XI</text>
+<text fill="#000000" x="550.0246" y="-31.30685" font-size="24" font-family="Noto Sans JP" text-anchor="start" xml:space="preserve" stroke="#666666" transform="matrix(0.396606 0 0 0.342335 40.0478 47.8302)">XIII</text>
+<text fill="#000000" x="658.12935" y="-31.30685" font-size="24" font-family="Noto Sans JP" text-anchor="start" xml:space="preserve" stroke="#666666" transform="matrix(0.396606 0 0 0.342335 40.0478 47.8302)">XV</text>
+<text fill="#000000" x="755.20301" y="-31.30685" font-size="24" font-family="Noto Sans JP" text-anchor="start" xml:space="preserve" stroke="#666666" transform="matrix(0.396606 0 0 0.342335 40.0478 47.8302)">XVII</text>
+<text fill="#000000" x="863.93811" y="-31.30685" font-size="24" font-family="Noto Sans JP" text-anchor="start" xml:space="preserve" stroke="#666666" transform="matrix(0.396606 0 0 0.342335 40.0478 47.8302)">XIX</text>
+<text fill="#000000" x="969.20629" y="-31.30685" font-size="24" font-family="Noto Sans JP" text-anchor="start" xml:space="preserve" stroke="#666666" transform="matrix(0.396606 0 0 0.342335 40.0478 47.8302)">XXI</text>
+<text fill="#000000" x="1065.6496" y="-31.30685" font-size="24" font-family="Noto Sans JP" text-anchor="start" xml:space="preserve" stroke="#666666" transform="matrix(0.396606 0 0 0.342335 40.0478 47.8302)">XXIII</text>
+
+</svg> -->
+<svg
+      xmlns="http://www.w3.org/2000/svg" id="fret-board" preserveAspectRatio="none" viewBox="0 0 506.5 45">
+      <defs>
+            <style>.cls-1,.cls-2,.cls-3,.cls-4,.cls-5,.cls-6{fill:none;}.cls-1,.cls-4,.cls-5{stroke:#000;}.cls-2,.cls-3{stroke:#666;}.cls-3{stroke-width:4px;}.cls-4,.cls-5{font-size:6px;font-family:Corbel;}.cls-4{letter-spacing:0.03em;}.cls-5{letter-spacing:0.03em;}</style>
+      </defs>
+      <line id="1E1" class="cls-1" x1="3.91" y1="2.9" x2="23.77" y2="2.9"/>
+      <line id="1B2" class="cls-1" x1="3.91" y1="8.17" x2="23.77" y2="8.17"/>
+      <line id="1G3" class="cls-1" x1="3.91" y1="13.4" x2="23.77" y2="13.4"/>
+      <line id="1D4" class="cls-1" x1="3.91" y1="18.67" x2="23.77" y2="18.67"/>
+      <line id="1A5" class="cls-1" x1="3.91" y1="23.9" x2="23.77" y2="23.9"/>
+      <line id="1E6" class="cls-1" x1="3.91" y1="29.17" x2="23.77" y2="29.17"/>
+      <line id="svg1" class="cls-2" x1="24.19" y1="2.34" x2="24.19" y2="29.66"/>
+      <line id="2E1" class="cls-1" x1="24.66" y1="2.9" x2="44.52" y2="2.9"/>
+      <line id="2B2" class="cls-1" x1="24.66" y1="8.17" x2="44.52" y2="8.17"/>
+      <line id="2G3" class="cls-1" x1="24.66" y1="13.4" x2="44.52" y2="13.4"/>
+      <line id="2D4" class="cls-1" x1="24.66" y1="18.67" x2="44.52" y2="18.67"/>
+      <line id="2A5" class="cls-1" x1="24.66" y1="23.9" x2="44.52" y2="23.9"/>
+      <line id="2E6" class="cls-1" x1="24.66" y1="29.17" x2="44.52" y2="29.17"/>
+      <line id="svg2" class="cls-2" x1="45.07" y1="2.34" x2="45.07" y2="29.66"/>
+      <line id="3E1" class="cls-1" x1="45.54" y1="2.9" x2="65.4" y2="2.9"/>
+      <line id="3B2" class="cls-1" x1="45.54" y1="8.17" x2="65.4" y2="8.17"/>
+      <line id="3G3" class="cls-1" x1="45.54" y1="13.4" x2="65.4" y2="13.4"/>
+      <line id="3D4" class="cls-1" x1="45.54" y1="18.67" x2="65.4" y2="18.67"/>
+      <line id="3A5" class="cls-1" x1="44.62" y1="23.9" x2="65.4" y2="23.9"/>
+      <line id="3E6" class="cls-1" x1="45.54" y1="29.17" x2="65.4" y2="29.17"/>
+      <line id="svg3" class="cls-2" x1="65.82" y1="2.34" x2="65.82" y2="29.66"/>
+      <line id="4E1" class="cls-1" x1="66.29" y1="2.9" x2="86.15" y2="2.9"/>
+      <line id="4B2" class="cls-1" x1="66.29" y1="8.17" x2="86.15" y2="8.17"/>
+      <line id="4G3" class="cls-1" x1="66.29" y1="13.4" x2="86.15" y2="13.4"/>
+      <line id="4D4" class="cls-1" x1="66.29" y1="18.67" x2="86.15" y2="18.67"/>
+      <line id="4A5" class="cls-1" x1="66.29" y1="23.9" x2="86.15" y2="23.9"/>
+      <line id="4E6" class="cls-1" x1="66.29" y1="29.17" x2="86.15" y2="29.17"/>
+      <line id="svg4" class="cls-2" x1="86.69" y1="2.34" x2="86.69" y2="29.66"/>
+      <line id="5E1" class="cls-1" x1="87.16" y1="2.9" x2="107.02" y2="2.9"/>
+      <line id="5B2" class="cls-1" x1="87.16" y1="8.17" x2="107.02" y2="8.17"/>
+      <line id="5G3" class="cls-1" x1="87.16" y1="13.4" x2="107.02" y2="13.4"/>
+      <line id="5D4" class="cls-1" x1="87.16" y1="18.67" x2="107.02" y2="18.67"/>
+      <line id="5A5" class="cls-1" x1="87.16" y1="23.9" x2="107.02" y2="23.9"/>
+      <line id="5E6" class="cls-1" x1="87.16" y1="29.17" x2="107.02" y2="29.17"/>
+      <line id="svg5" class="cls-2" x1="107.44" y1="2.34" x2="107.44" y2="29.66"/>
+      <line id="6E1" class="cls-1" x1="107.91" y1="2.9" x2="127.77" y2="2.9"/>
+      <line id="6B2" class="cls-1" x1="107.91" y1="8.17" x2="127.77" y2="8.17"/>
+      <line id="6G3" class="cls-1" x1="107.91" y1="13.4" x2="127.77" y2="13.4"/>
+      <line id="6D4" class="cls-1" x1="107.91" y1="18.67" x2="127.77" y2="18.67"/>
+      <line id="6A5" class="cls-1" x1="107.91" y1="23.9" x2="127.77" y2="23.9"/>
+      <line id="6E6" class="cls-1" x1="107.91" y1="29.17" x2="127.77" y2="29.17"/>
+      <line id="svg6" class="cls-2" x1="128.32" y1="2.34" x2="128.32" y2="29.66"/>
+      <line id="7E1" class="cls-1" x1="128.79" y1="2.9" x2="148.65" y2="2.9"/>
+      <line id="7B2" class="cls-1" x1="128.79" y1="8.17" x2="148.65" y2="8.17"/>
+      <line id="7G3" class="cls-1" x1="128.79" y1="13.4" x2="148.65" y2="13.4"/>
+      <line id="7D4" class="cls-1" x1="128.79" y1="18.67" x2="148.65" y2="18.67"/>
+      <line id="7A5" class="cls-1" x1="128.79" y1="23.9" x2="148.65" y2="23.9"/>
+      <line id="7E6" class="cls-1" x1="128.79" y1="29.17" x2="148.65" y2="29.17"/>
+      <line id="svg7" class="cls-2" x1="149.07" y1="2.34" x2="149.07" y2="29.66"/>
+      <line id="8E1" class="cls-1" x1="149.54" y1="2.9" x2="169.4" y2="2.9"/>
+      <line id="8B2" class="cls-1" x1="149.54" y1="8.17" x2="169.4" y2="8.17"/>
+      <line id="8G3" class="cls-1" x1="149.54" y1="13.4" x2="169.4" y2="13.4"/>
+      <line id="8D4" class="cls-1" x1="149.54" y1="18.67" x2="169.4" y2="18.67"/>
+      <line id="8A5" class="cls-1" x1="149.54" y1="23.9" x2="169.4" y2="23.9"/>
+      <line id="8E6" class="cls-1" x1="149.54" y1="29.17" x2="169.4" y2="29.17"/>
+      <line id="svg8" class="cls-2" x1="169.94" y1="2.34" x2="169.94" y2="29.66"/>
+      <line id="9E1" class="cls-1" x1="170.41" y1="2.9" x2="190.27" y2="2.9"/>
+      <line id="9B2" class="cls-1" x1="170.41" y1="8.17" x2="190.27" y2="8.17"/>
+      <line id="9G3" class="cls-1" x1="170.41" y1="13.4" x2="190.27" y2="13.4"/>
+      <line id="9D4" class="cls-1" x1="170.41" y1="18.67" x2="190.27" y2="18.67"/>
+      <line id="9A5" class="cls-1" x1="170.41" y1="23.9" x2="190.27" y2="23.9"/>
+      <line id="9E6" class="cls-1" x1="170.41" y1="29.17" x2="190.27" y2="29.17"/>
+      <line id="svg9" class="cls-2" x1="190.69" y1="2.34" x2="190.69" y2="29.66"/>
+      <line id="10E1" class="cls-1" x1="191.16" y1="2.9" x2="211.02" y2="2.9"/>
+      <line id="10B2" class="cls-1" x1="191.16" y1="8.17" x2="211.02" y2="8.17"/>
+      <line id="10G3" class="cls-1" x1="191.16" y1="13.4" x2="211.02" y2="13.4"/>
+      <line id="10D4" class="cls-1" x1="191.16" y1="18.67" x2="211.02" y2="18.67"/>
+      <line id="10A5" class="cls-1" x1="191.16" y1="23.9" x2="211.02" y2="23.9"/>
+      <line id="10E6" class="cls-1" x1="191.16" y1="29.17" x2="211.02" y2="29.17"/>
+      <line id="svg10" class="cls-2" x1="211.57" y1="2.34" x2="211.57" y2="29.66"/>
+      <line id="11E1" class="cls-1" x1="212.04" y1="2.9" x2="231.9" y2="2.9"/>
+      <line id="11B2" class="cls-1" x1="212.04" y1="8.17" x2="231.9" y2="8.17"/>
+      <line id="11G3" class="cls-1" x1="212.04" y1="13.4" x2="231.9" y2="13.4"/>
+      <line id="11D4" class="cls-1" x1="212.04" y1="18.67" x2="231.9" y2="18.67"/>
+      <line id="11A5" class="cls-1" x1="212.04" y1="23.9" x2="231.9" y2="23.9"/>
+      <line id="11E6" class="cls-1" x1="212.04" y1="29.17" x2="231.9" y2="29.17"/>
+      <line id="svg11" class="cls-2" x1="232.32" y1="2.34" x2="232.32" y2="29.66"/>
+      <line id="12E1" class="cls-1" x1="232.79" y1="2.9" x2="252.65" y2="2.9"/>
+      <line id="12B2" class="cls-1" x1="232.79" y1="8.17" x2="252.65" y2="8.17"/>
+      <line id="12G3" class="cls-1" x1="232.79" y1="13.4" x2="252.65" y2="13.4"/>
+      <line id="12D4" class="cls-1" x1="232.79" y1="18.67" x2="252.65" y2="18.67"/>
+      <line id="12A5" class="cls-1" x1="232.79" y1="23.9" x2="252.65" y2="23.9"/>
+      <line id="12E6" class="cls-1" x1="232.79" y1="29.17" x2="252.65" y2="29.17"/>
+      <line id="svg12" class="cls-2" x1="253.19" y1="2.34" x2="253.19" y2="29.66"/>
+      <line id="13E1" class="cls-1" x1="253.66" y1="2.9" x2="273.52" y2="2.9"/>
+      <line id="13B2" class="cls-1" x1="253.66" y1="8.17" x2="273.52" y2="8.17"/>
+      <line id="13G3" class="cls-1" x1="253.66" y1="13.4" x2="273.52" y2="13.4"/>
+      <line id="13D4" class="cls-1" x1="253.66" y1="18.67" x2="273.52" y2="18.67"/>
+      <line id="13A5" class="cls-1" x1="253.66" y1="23.9" x2="273.52" y2="23.9"/>
+      <line id="13E6" class="cls-1" x1="253.66" y1="29.17" x2="273.52" y2="29.17"/>
+      <line id="svg13" class="cls-2" x1="273.94" y1="2.34" x2="273.94" y2="29.66"/>
+      <line id="14E1" class="cls-1" x1="274.41" y1="2.9" x2="294.27" y2="2.9"/>
+      <line id="14B2" class="cls-1" x1="274.41" y1="8.17" x2="294.27" y2="8.17"/>
+      <line id="14G3" class="cls-1" x1="274.41" y1="13.4" x2="294.27" y2="13.4"/>
+      <line id="14D4" class="cls-1" x1="274.41" y1="18.67" x2="294.27" y2="18.67"/>
+      <line id="14A5" class="cls-1" x1="274.41" y1="23.9" x2="294.27" y2="23.9"/>
+      <line id="14E6" class="cls-1" x1="274.41" y1="29.17" x2="294.27" y2="29.17"/>
+      <line id="svg14" class="cls-2" x1="294.81" y1="2.34" x2="294.81" y2="29.66"/>
+      <line id="15E1" class="cls-1" x1="295.29" y1="2.9" x2="315.15" y2="2.9"/>
+      <line id="15B2" class="cls-1" x1="295.29" y1="8.17" x2="315.15" y2="8.17"/>
+      <line id="15G4" class="cls-1" x1="295.29" y1="13.4" x2="315.15" y2="13.4"/>
+      <line id="15D4" class="cls-1" x1="295.29" y1="18.67" x2="315.15" y2="18.67"/>
+      <line id="15A5" class="cls-1" x1="295.29" y1="23.9" x2="315.15" y2="23.9"/>
+      <line id="15E6" class="cls-1" x1="295.29" y1="29.17" x2="315.15" y2="29.17"/>
+      <line id="svg15" class="cls-2" x1="315.56" y1="2.34" x2="315.56" y2="29.66"/>
+      <line id="16E1" class="cls-1" x1="316.04" y1="2.9" x2="335.9" y2="2.9"/>
+      <line id="16B2" class="cls-1" x1="316.04" y1="8.17" x2="335.9" y2="8.17"/>
+      <line id="16G3" class="cls-1" x1="316.04" y1="13.4" x2="335.9" y2="13.4"/>
+      <line id="16D4" class="cls-1" x1="316.04" y1="18.67" x2="335.9" y2="18.67"/>
+      <line id="16A5" class="cls-1" x1="316.04" y1="23.9" x2="335.9" y2="23.9"/>
+      <line id="16E6" class="cls-1" x1="316.04" y1="29.17" x2="335.9" y2="29.17"/>
+      <line id="svg16" class="cls-2" x1="336.44" y1="2.34" x2="336.44" y2="29.66"/>
+      <line id="17E1" class="cls-1" x1="336.91" y1="2.9" x2="356.77" y2="2.9"/>
+      <line id="17B2" class="cls-1" x1="336.91" y1="8.17" x2="356.77" y2="8.17"/>
+      <line id="17G3" class="cls-1" x1="336.91" y1="13.4" x2="356.77" y2="13.4"/>
+      <line id="17D4" class="cls-1" x1="336.91" y1="18.67" x2="356.77" y2="18.67"/>
+      <line id="17A5" class="cls-1" x1="336.91" y1="23.9" x2="356.77" y2="23.9"/>
+      <line id="17E6" class="cls-1" x1="336.91" y1="29.17" x2="356.77" y2="29.17"/>
+      <line id="svg17" class="cls-2" x1="357.19" y1="2.34" x2="357.19" y2="29.66"/>
+      <line id="18E1" class="cls-1" x1="357.66" y1="2.9" x2="377.52" y2="2.9"/>
+      <line id="18B2" class="cls-1" x1="357.66" y1="8.17" x2="377.52" y2="8.17"/>
+      <line id="18G3" class="cls-1" x1="357.66" y1="13.4" x2="377.52" y2="13.4"/>
+      <line id="18D4" class="cls-1" x1="357.66" y1="18.67" x2="377.52" y2="18.67"/>
+      <line id="18A5" class="cls-1" x1="357.66" y1="23.9" x2="377.52" y2="23.9"/>
+      <line id="18E6" class="cls-1" x1="357.66" y1="29.17" x2="377.52" y2="29.17"/>
+      <line id="svg18" class="cls-2" x1="378.06" y1="2.34" x2="378.06" y2="29.66"/>
+      <line id="19E1" class="cls-1" x1="378.53" y1="2.9" x2="398.4" y2="2.9"/>
+      <line id="19B2" class="cls-1" x1="378.53" y1="8.17" x2="398.4" y2="8.17"/>
+      <line id="19G3" class="cls-1" x1="378.53" y1="13.4" x2="398.4" y2="13.4"/>
+      <line id="19D4" class="cls-1" x1="378.53" y1="18.67" x2="398.4" y2="18.67"/>
+      <line id="19A5" class="cls-1" x1="378.53" y1="23.9" x2="398.4" y2="23.9"/>
+      <line id="19E6" class="cls-1" x1="378.53" y1="29.17" x2="398.4" y2="29.17"/>
+      <line id="svg19" class="cls-2" x1="398.81" y1="2.34" x2="398.81" y2="29.66"/>
+      <line id="20E1" class="cls-1" x1="399.28" y1="2.9" x2="419.15" y2="2.9"/>
+      <line id="20B2" class="cls-1" x1="399.28" y1="8.17" x2="419.15" y2="8.17"/>
+      <line id="20G3" class="cls-1" x1="399.28" y1="13.4" x2="419.15" y2="13.4"/>
+      <line id="20D4" class="cls-1" x1="399.28" y1="18.67" x2="419.15" y2="18.67"/>
+      <line id="20A5" class="cls-1" x1="399.28" y1="23.9" x2="419.15" y2="23.9"/>
+      <line id="20E6" class="cls-1" x1="399.28" y1="29.17" x2="419.15" y2="29.17"/>
+      <line id="svg20" class="cls-2" x1="419.69" y1="2.34" x2="419.69" y2="29.66"/>
+      <line id="21E1" class="cls-1" x1="420.16" y1="2.9" x2="440.02" y2="2.9"/>
+      <line id="21B2" class="cls-1" x1="420.16" y1="8.17" x2="440.02" y2="8.17"/>
+      <line id="21G3" class="cls-1" x1="420.16" y1="13.4" x2="440.02" y2="13.4"/>
+      <line id="21D4" class="cls-1" x1="420.16" y1="18.67" x2="440.02" y2="18.67"/>
+      <line id="21A5" class="cls-1" x1="420.16" y1="23.9" x2="440.02" y2="23.9"/>
+      <line id="21E6" class="cls-1" x1="420.16" y1="29.17" x2="440.02" y2="29.17"/>
+      <line id="svg21" class="cls-2" x1="440.44" y1="2.34" x2="440.44" y2="29.66"/>
+      <line id="22E1" class="cls-1" x1="440.91" y1="2.9" x2="460.77" y2="2.9"/>
+      <line id="22B2" class="cls-1" x1="440.91" y1="8.17" x2="460.77" y2="8.17"/>
+      <line id="22G3" class="cls-1" x1="440.91" y1="13.4" x2="460.77" y2="13.4"/>
+      <line id="22D4" class="cls-1" x1="440.91" y1="18.67" x2="460.77" y2="18.67"/>
+      <line id="22A5" class="cls-1" x1="440.91" y1="23.9" x2="460.77" y2="23.9"/>
+      <line id="22E6" class="cls-1" x1="440.91" y1="29.17" x2="460.77" y2="29.17"/>
+      <line id="svg22" class="cls-2" x1="461.31" y1="2.34" x2="461.31" y2="29.66"/>
+      <line id="23E1" class="cls-1" x1="461.78" y1="2.9" x2="481.65" y2="2.9"/>
+      <line id="23B2" class="cls-1" x1="461.78" y1="8.17" x2="481.65" y2="8.17"/>
+      <line id="23G3" class="cls-1" x1="461.78" y1="13.4" x2="481.65" y2="13.4"/>
+      <line id="23D4" class="cls-1" x1="461.78" y1="18.67" x2="481.65" y2="18.67"/>
+      <line id="23A5" class="cls-1" x1="461.78" y1="23.9" x2="481.65" y2="23.9"/>
+      <line id="23E6" class="cls-1" x1="461.78" y1="29.17" x2="481.65" y2="29.17"/>
+      <line id="svg23" class="cls-2" x1="482.06" y1="2.34" x2="482.06" y2="29.66"/>
+      <line id="24E1" class="cls-1" x1="482.53" y1="2.9" x2="502.4" y2="2.9"/>
+      <line id="24B2" class="cls-1" x1="482.53" y1="8.17" x2="502.4" y2="8.17"/>
+      <line id="24G3" class="cls-1" x1="482.53" y1="13.4" x2="502.4" y2="13.4"/>
+      <line id="24D4" class="cls-1" x1="482.53" y1="18.67" x2="502.4" y2="18.67"/>
+      <line id="24A5" class="cls-1" x1="482.53" y1="23.9" x2="502.4" y2="23.9"/>
+      <line id="24E6" class="cls-1" x1="482.53" y1="29.17" x2="502.4" y2="29.17"/>
+      <line id="svg24" class="cls-2" x1="502.94" y1="2.34" x2="502.94" y2="29.66"/>
+      <line id="svg25" class="cls-3" x1="2" y1="2.34" x2="2" y2="29.66"/>
+      <text id="svg26" class="cls-4" transform="translate(12.9 35.57) scale(1.16 1)">I</text>
+      <text id="svg27" class="cls-4" transform="translate(51.68 35.58) scale(1.16 1)">III</text>
+      <text id="svg28" class="cls-5" transform="translate(94.88 35.57) scale(1.16 1)">V</text>
+      <text id="svg29" class="cls-5" transform="translate(134.59 35.58) scale(1.16 1)">VII</text>
+      <text id="svg30" class="cls-4" transform="translate(177.25 35.58) scale(1.16 1)">IX</text>
+      <text id="svg31" class="cls-5" transform="translate(218.88 35.58) scale(1.16 1)">XI</text>
+      <text id="svg32" class="cls-5" transform="translate(258.58 35.58) scale(1.16 1)">XIII</text>
+      <text id="svg33" class="cls-5" transform="translate(300.87 35.58) scale(1.16 1)">XV</text>
+      <text id="svg34" class="cls-5" transform="translate(340.58 35.58) scale(1.16 1)">XVII</text>
+      <text id="svg35" class="cls-5" transform="translate(383.24 35.58) scale(1.16 1)">XIX</text>
+      <text id="svg36" class="cls-5" transform="translate(424.86 35.58) scale(1.16 1)">XXI</text>
+      <text id="svg37" class="cls-5" transform="translate(464.57 35.58) scale(1.16 1)">XXIII</text>
+      <rect pointer-events="visible" id="svg43" class="cls-6 1E1" x="3.97" y="0.07" width="19.71" height="5.34"/>
+      <rect pointer-events="visible" id="svg41" class="cls-6 1B2" x="3.97" y="5.4" width="19.71" height="5.34"/>
+      <rect pointer-events="visible" id="svg42" class="cls-6 1G3" x="3.97" y="10.73" width="19.71" height="5.34"/>
+      <rect pointer-events="visible" id="svg44" class="cls-6 1A5" x="3.97" y="21.39" width="19.71" height="5.34"/>
+      <rect pointer-events="visible" id="svg45" class="cls-6 1E6" x="3.97" y="26.72" width="19.71" height="5.34"/>
+      <rect pointer-events="visible" id="svg46" class="cls-6 1D4" x="3.97" y="16.06" width="19.71" height="5.34"/>
+
+      <rect pointer-events="visible" id="svg41-2" class="cls-6 2B2" x="24.74" y="5.4" width="19.71" height="5.34"/>
+      <rect pointer-events="visible" id="svg42-2" class="cls-6 2G3" x="24.74" y="10.73" width="19.71" height="5.34"/>
+      <rect pointer-events="visible" id="svg43-2" class="cls-6 2E1" x="24.74" y="0.07" width="19.71" height="5.34"/>
+      <rect pointer-events="visible" id="svg44-2" class="cls-6 2A5" x="24.74" y="21.39" width="19.71" height="5.34"/>
+      <rect pointer-events="visible" id="svg45-2" class="cls-6 2E6" x="24.74" y="26.72" width="19.71" height="5.34"/>
+      <rect pointer-events="visible" id="svg46-2" class="cls-6 2D4" x="24.74" y="16.06" width="19.71" height="5.34"/>
+
+      <rect pointer-events="visible" id="svg41-3" class="cls-6 3B2" x="45.5" y="5.4" width="19.71" height="5.34"/>
+      <rect pointer-events="visible" id="svg42-3" class="cls-6 3G3" x="45.5" y="10.73" width="19.71" height="5.34"/>
+      <rect pointer-events="visible" id="svg43-3" class="cls-6 3E1" x="45.5" y="0.07" width="19.71" height="5.34"/>
+      <rect pointer-events="visible" id="svg44-3" class="cls-6 3A5" x="45.5" y="21.39" width="19.71" height="5.34"/>
+      <rect pointer-events="visible" id="svg45-3" class="cls-6 3E6" x="45.5" y="26.72" width="19.71" height="5.34"/>
+      <rect pointer-events="visible" id="svg46-3" class="cls-6 3D4" x="45.5" y="16.06" width="19.71" height="5.34"/>
+
+      <rect pointer-events="visible" id="svg41-4" class="cls-6 4B2" x="66.26" y="5.4" width="19.71" height="5.34"/>
+      <rect pointer-events="visible" id="svg42-4" class="cls-6 4G3" x="66.26" y="10.73" width="19.71" height="5.34"/>
+      <rect pointer-events="visible" id="svg43-4" class="cls-6 4E1" x="66.26" y="0.07" width="19.71" height="5.34"/>
+      <rect pointer-events="visible" id="svg44-4" class="cls-6 4A5" x="66.26" y="21.39" width="19.71" height="5.34"/>
+      <rect pointer-events="visible" id="svg45-4" class="cls-6 4E6" x="66.26" y="26.72" width="19.71" height="5.34"/>
+      <rect pointer-events="visible" id="svg46-4" class="cls-6 4D4" x="66.26" y="16.06" width="19.71" height="5.34"/>
+
+      <rect pointer-events="visible" id="svg41-5" class="cls-6 5B2" x="87.03" y="5.4" width="19.71" height="5.34"/>
+      <rect pointer-events="visible" id="svg42-5" class="cls-6 5G3" x="87.03" y="10.73" width="19.71" height="5.34"/>
+      <rect pointer-events="visible" id="svg43-5" class="cls-6 5E1" x="87.03" y="0.07" width="19.71" height="5.34"/>
+      <rect pointer-events="visible" id="svg44-5" class="cls-6 5A5" x="87.03" y="21.39" width="19.71" height="5.34"/>
+      <rect pointer-events="visible" id="svg45-5" class="cls-6 5E6" x="87.03" y="26.72" width="19.71" height="5.34"/>
+      <rect pointer-events="visible" id="svg46-5" class="cls-6 5D4" x="87.03" y="16.06" width="19.71" height="5.34"/>
+
+      <rect pointer-events="visible" id="svg41-6" class="cls-6 6B2" x="107.79" y="5.4" width="19.71" height="5.34"/>
+      <rect pointer-events="visible" id="svg42-6" class="cls-6 6G3" x="107.79" y="10.73" width="19.71" height="5.34"/>
+      <rect pointer-events="visible" id="svg43-6" class="cls-6 6E1" x="107.79" y="0.07" width="19.71" height="5.34"/>
+      <rect pointer-events="visible" id="svg44-6" class="cls-6 6A5" x="107.79" y="21.39" width="19.71" height="5.34"/>
+      <rect pointer-events="visible" id="svg45-6" class="cls-6 6E6" x="107.79" y="26.72" width="19.71" height="5.34"/>
+      <rect pointer-events="visible" id="svg46-6" class="cls-6 6D4" x="107.79" y="16.06" width="19.71" height="5.34"/>
+
+      <rect pointer-events="visible" id="svg41-7" class="cls-6 7B2" x="128.55" y="5.4" width="19.71" height="5.34"/>
+      <rect pointer-events="visible" id="svg42-7" class="cls-6 7G3" x="128.55" y="10.73" width="19.71" height="5.34"/>
+      <rect pointer-events="visible" id="svg43-7" class="cls-6 7E1" x="128.55" y="0.07" width="19.71" height="5.34"/>
+      <rect pointer-events="visible" id="svg44-7" class="cls-6 7A5" x="128.55" y="21.39" width="19.71" height="5.34"/>
+      <rect pointer-events="visible" id="svg45-7" class="cls-6 7E6" x="128.55" y="26.72" width="19.71" height="5.34"/>
+      <rect pointer-events="visible" id="svg46-7" class="cls-6 7D4" x="128.55" y="16.06" width="19.71" height="5.34"/>
+
+      <rect pointer-events="visible" id="svg41-8" class="cls-6 8B2" x="149.32" y="5.4" width="20.08" height="5.34"/>
+      <rect pointer-events="visible" id="svg42-8" class="cls-6 8G3" x="149.32" y="10.73" width="20.08" height="5.34"/>
+      <rect pointer-events="visible" id="svg43-8" class="cls-6 8E1" x="149.32" y="0.07" width="20.08" height="5.34"/>
+      <rect pointer-events="visible" id="svg44-8" class="cls-6 8A5" x="149.32" y="21.39" width="20.08" height="5.34"/>
+      <rect pointer-events="visible" id="svg45-8" class="cls-6 8E6" x="149.32" y="26.72" width="20.08" height="5.34"/>
+      <rect pointer-events="visible" id="svg46-8" class="cls-6 8D4" x="149.32" y="16.06" width="20.08" height="5.34"/>
+
+      <rect pointer-events="visible" id="svg41-9" class="cls-6 9B2" x="170.49" y="5.34" width="19.71" height="5.34"/>
+      <rect pointer-events="visible" id="svg42-9" class="cls-6 9G3" x="170.49" y="10.67" width="19.71" height="5.34"/>
+      <rect pointer-events="visible" id="svg43-9" class="cls-6 9E1" x="170.49" y="0.01" width="19.71" height="5.34"/>
+      <rect pointer-events="visible" id="svg44-9" class="cls-6 9A5" x="170.49" y="21.32" width="19.71" height="5.34"/>
+      <rect pointer-events="visible" id="svg45-9" class="cls-6 9E6" x="170.49" y="26.65" width="19.71" height="5.34"/>
+      <rect pointer-events="visible" id="svg46-9" class="cls-6 9D4" x="170.49" y="16" width="19.71" height="5.34"/>
+
+      <rect pointer-events="visible"  class="cls-6 10B2" x="191.24" y="5.33" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 10G3" x="191.24" y="10.66" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 10E1" x="191.24" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 10A5" x="191.24" y="21.32" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 10E6" x="191.24" y="26.64" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 10D4" x="191.24" y="15.99" width="19.71" height="5.34"/>
+
+      <rect pointer-events="visible"  class="cls-6 11B2" x="212.13" y="5.34" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 11G3" x="212.13" y="10.66" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 11E1" x="212.13" y="0.01" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 11A5" x="212.13" y="21.32" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 11E6" x="212.13" y="26.65" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 11D4" x="212.13" y="15.99" width="19.71" height="5.34"/>
+
+      <rect pointer-events="visible"  class="cls-6 12B2" x="232.86" y="5.33" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 12G3" x="232.86" y="10.66" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 12E1" x="232.86" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 12A5" x="232.86" y="21.31" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 12E6" x="232.86" y="26.64" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 12D4" x="232.86" y="15.98" width="19.71" height="5.34"/>
+
+      <rect pointer-events="visible"  class="cls-6 13B2" x="253.69" y="5.4" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 13G3" x="253.69" y="10.73" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 13E1" x="253.69" y="0.07" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 13A5" x="253.69" y="21.38" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 13E6" x="253.69" y="26.71" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 13D4" x="253.69" y="16.06" width="19.71" height="5.34"/>
+
+      <rect pointer-events="visible"  class="cls-6 14B2" x="274.49" y="5.4" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 14G3" x="274.49" y="10.73" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 14E1" x="274.49" y="0.07" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 14A5" x="274.49" y="21.39" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 14E6" x="274.49" y="26.72" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 14D4" x="274.49" y="16.06" width="19.71" height="5.34"/>
+
+      <rect pointer-events="visible"  class="cls-6 15B2" x="295.26" y="5.4" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 15G3" x="295.26" y="10.73" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 15E1" x="295.26" y="0.07" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 15A5" x="295.26" y="21.38" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 15E6" x="295.26" y="26.71" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 15D4" x="295.26" y="16.06" width="19.71" height="5.34"/>
+
+      <rect pointer-events="visible"  class="cls-6 16B2" x="316.13" y="5.34" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 16G3" x="316.13" y="10.67" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 16E1" x="316.13" y="0.01" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 16A5" x="316.13" y="21.32" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 16E6" x="316.13" y="26.65" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 16D4" x="316.13" y="16" width="19.71" height="5.34"/>
+
+      <rect pointer-events="visible"  class="cls-6 17B2" x="336.84" y="5.4" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 17G3" x="336.84" y="10.73" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 17E1" x="336.84" y="0.07" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 17A5" x="336.84" y="21.38" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 17E6" x="336.84" y="26.71" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 17D4" x="336.84" y="16.06" width="19.71" height="5.34"/>
+
+      <rect pointer-events="visible"  class="cls-6 18B2" x="357.6" y="5.34" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 18G3" x="357.6" y="10.67" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 18E1" x="357.6" y="0.01" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 18A5" x="357.6" y="21.32" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 18E6" x="357.6" y="26.65" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 18D4" x="357.6" y="16" width="19.71" height="5.34"/>
+
+      <rect pointer-events="visible"  class="cls-6 19B2" x="378.41" y="5.34" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 19G3" x="378.41" y="10.66" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 19E1" x="378.41" y="0.01" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 19A5" x="378.41" y="21.32" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 19E6" x="378.41" y="26.65" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 19D4" x="378.41" y="15.99" width="19.71" height="5.34"/>
+
+      <rect pointer-events="visible"  class="cls-6 20B2" x="399.18" y="5.34" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 20G3" x="399.18" y="10.66" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 20E1" x="399.18" y="0.01" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 20A5" x="399.18" y="21.32" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 20E6" x="399.18" y="26.65" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 20D4" x="399.18" y="15.99" width="19.71" height="5.34"/>
+
+      <rect pointer-events="visible"  class="cls-6 21B2" x="420.31" y="5.33" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 21G3" x="420.31" y="10.66" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 21E1" x="420.31" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 21A5" x="420.31" y="21.32" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 21E6" x="420.31" y="26.64" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 21D4" x="420.31" y="15.99" width="19.71" height="5.34"/>
+
+      <rect pointer-events="visible"  class="cls-6 22B2" x="441.08" y="5.33" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 22G3" x="441.08" y="10.66" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 22E1" x="441.08" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 22A5" x="441.08" y="21.32" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 22E6" x="441.08" y="26.64" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 22D4" x="441.08" y="15.99" width="19.71" height="5.34"/>
+
+      <rect pointer-events="visible"  class="cls-6 23B2" x="461.84" y="5.33" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 23G3" x="461.84" y="10.66" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 23E1" x="461.84" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 23A5" x="461.84" y="21.32" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 23E6" x="461.84" y="26.64" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 23D4" x="461.84" y="15.99" width="19.71" height="5.34"/>
+
+      <rect pointer-events="visible"  class="cls-6 24B2" x="482.6" y="5.33" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 24G3" x="482.6" y="10.66" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 24E1" x="482.6" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 24A5" x="482.6" y="21.32" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 24E6" x="482.6" y="26.64" width="19.71" height="5.34"/>
+      <rect pointer-events="visible"  class="cls-6 24D4" x="482.6" y="15.99" width="19.71" height="5.34"/>
+</svg>

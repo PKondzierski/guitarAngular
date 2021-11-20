@@ -1,0 +1,16 @@
+<h1 mat-dialog-title>Podaj nazwe {{sectionGroup[1]}}</h1>
+
+<form [formGroup]="sectionGroup[0]">
+
+<div mat-dialog-conten class="dialog">
+  <mat-form-field class="dialog" >
+    <mat-label>Nazwa</mat-label>
+    <input formControlName="name" matInput />
+    <mat-error *ngIf="!sectionGroup[0].get('name')!.valid">  {{getTitleError()}}</mat-error>
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button [disabled]="!sectionGroup[0].valid" class="dialog" color="accent" mat-raised-button [mat-dialog-close]="sectionGroup[0]" cdkFocusInitial>Dodaj</button>
+</div>
+
+</form>

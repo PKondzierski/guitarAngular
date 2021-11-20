@@ -1,0 +1,97 @@
+table {
+    width: 100%;
+    max-height: 100vh;
+    overflow: scroll;
+}
+
+.container {
+    margin-left: 2px;
+}
+
+::ng-deep {
+    .mat-paginator-page-size {
+        margin-right: 20px !important;
+    }
+}
+
+.element:hover {
+    background-color: rgba(219, 219, 219, 0.877); /*where 0.5 stands for 50% opacity*/
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.pause {
+    width: 10px;
+    height: 25px;
+}
+.pause:hover {
+    border: 1px solid rgba(0, 0, 0, 0.87);
+}
+
+.arrows {
+    display: flex;
+    flex-direction: column;
+}
+.add-icon {
+    font-size: 15px;
+    line-height: 15px;
+    height: 15px;
+    width: 15px;
+}
+.mat-icon-button {
+    font-size: 15px;
+    line-height: 15px;
+    height: 15px;
+    width: 15px;
+}
+
+.beating-column {
+    display: flex;
+    align-items: center;
+}
+.beating-item {
+    cursor: pointer;
+}
+.beating-item:hover {
+    color: red;
+}
+::ng-deep .mat-option-text {
+    display: flex !important;
+    flex-direction: row !important;
+    font-size: 15px;
+}
+::ng-deep .mat-option .mat-icon {
+    padding: 0 !important;
+    margin: 0 !important;
+    font-size: 15px;
+    width: 15px;
+    height: 15px;
+}
+.select {
+    margin-left: 10px;
+}
+
+::ng-deep .no-wraper .mat-form-field-wrapper {
+    margin-bottom: -1.25em;
+}
+
+.mat-column-number {
+    // border-right: 1px solid currentColor;
+    padding: 0 3px !important;
+    text-align: center;
+}
+
+.mat-column-startChordTime {
+    padding-left: 5px;
+}
+.button-delete {
+    margin-left: 10px;
+}
+.delete-icon {
+    font-size: 15px;
+    line-height: 15px;
+    height: 15px;
+    width: 15px;
+}

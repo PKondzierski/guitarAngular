@@ -1,0 +1,25 @@
+<div class="background"></div>
+<div class="logo"></div>
+<div class="container">
+<mat-card color="primary" id="form-div">
+  <form [formGroup]="loginForm" (ngSubmit)="login()">
+
+    <mat-error style="margin-bottom: 25px;">{{badCredentials}}</mat-error>
+    <mat-form-field class="form">
+      <mat-label>Login</mat-label>
+      <input formControlName="username" type="text" matInput/>
+      <mat-error *ngIf="!loginForm.get('username')!.valid">{{getUsernameError()}}</mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="form">
+      <mat-label>Hasło</mat-label>
+      <input formControlName="password" [type]="passwordHidden ? 'password' : 'text'" matInput/>
+      <button mat-icon-button matSuffix (click)="passwordHidden = !passwordHidden">
+        <mat-icon>{{passwordHidden ? 'visibility_off' : 'visibility'}}</mat-icon>
+      </button>
+      <mat-error *ngIf="!loginForm.get('password')!.valid">{{getPasswordError()}}</mat-error>
+    </mat-form-field>
+    <button id="submit-button" mat-raised-button type="submit">Zaloguj</button>
+  </form>
+</mat-card>
+</div>

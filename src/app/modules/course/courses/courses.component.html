@@ -1,0 +1,41 @@
+<div class="container">
+    <div fxLayout fxLayoutAlign="center center">
+        <mat-form-field fxFlex="99%">
+          <input matInput type="text" (keyup)="filter($event)" placeholder="Nazwa kursu">
+        </mat-form-field>
+      </div>
+  <div>
+    <mat-table style="background: inherit;" [dataSource]="dataSource">
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef>No.</th>
+        <td mat-cell *matCellDef="let element; let i = index">{{ i }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="Kurs">
+        <th mat-header-cell *matHeaderCellDef>Kurs</th>
+        <td mat-cell *matCellDef="let element">{{ element.name }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="Autor">
+        <th mat-header-cell *matHeaderCellDef>Autor</th>
+        <td mat-cell *matCellDef="let element">{{ element.author }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="Liczba lekcji">
+        <th mat-header-cell *matHeaderCellDef>Liczba lekcji</th>
+        <td mat-cell *matCellDef="let element">{{ element.lessons }}</td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns" (click)="getCourse(row)" ></tr>
+    </mat-table>
+
+    <mat-paginator
+    style="background: inherit;"
+      [pageSizeOptions]="[5, 10, 20]"
+      showFirstLastButtons
+      aria-label="Select page of periodic elements"
+    >
+    </mat-paginator>
+  </div>
+</div>

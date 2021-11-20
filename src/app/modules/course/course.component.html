@@ -1,0 +1,46 @@
+<div id="container" [style.flex-direction]="flexDirection">
+  <div class="sec1" [style.width]="flexSizeVideo + '%'">
+    <app-video ></app-video>
+
+    <ng-container *ngIf="!theatherMode && !isMobile && !smallDevice">
+      <mat-tab-group class="tabs" mat-align-tabs="left">
+        <mat-tab label="O kursie">
+            <app-about-course></app-about-course>
+        </mat-tab>
+        <mat-tab label="Odnośniki">
+          <app-references></app-references>
+        </mat-tab>
+        <mat-tab label="Pytania">
+          <app-comment></app-comment>
+        </mat-tab>
+        <mat-tab label="Notatki">
+          <app-note></app-note>
+        </mat-tab>
+      </mat-tab-group>
+    </ng-container>
+  </div>
+
+  <div *ngIf="!theatherMode && !isMobile && !smallDevice" class="sec2" [style.width]="flexSizePanel + '%'">
+    <app-lesson ></app-lesson>
+  </div>
+
+<ng-container *ngIf="theatherMode || isMobile || smallDevice ">
+  <mat-tab-group class="tabs" mat-align-tabs="center">
+    <mat-tab label="Lekcje">
+      <app-lessons></app-lessons>
+    </mat-tab>
+    <mat-tab label="O kursie">
+      <app-about-course></app-about-course>
+    </mat-tab>
+    <mat-tab label="Odnośniki">
+      <app-references></app-references>
+    </mat-tab>
+    <mat-tab label="Pytania">
+      <app-comment></app-comment>
+    </mat-tab>
+    <mat-tab label="Notatki"> 
+      <app-note></app-note>
+    </mat-tab>
+  </mat-tab-group>
+</ng-container>
+</div>

@@ -1,0 +1,68 @@
+<div class="background"></div>
+<div class="logo"></div>
+<div class="container">
+<mat-card color="primary" id="form-div">
+  <form [formGroup]="registerForm" (ngSubmit)="register()">
+    <span>Wypełnij pola i</span>
+    <span style="margin-bottom: 5px;">dołącz już dziś!</span>
+    <mat-form-field class="form">
+      <mat-label>Email</mat-label>
+      <input formControlName="email" type="email" matInput/>
+      <mat-error *ngIf="!registerForm.get('email')!.valid">{{getEmailError()}}</mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="form">
+      <mat-label>Login</mat-label>
+      <input formControlName="username" type="text" matInput/>
+    </mat-form-field>
+
+    <mat-form-field class="form">
+      <mat-label>Imie</mat-label>
+      <input formControlName="firstname" type="text" matInput/>
+    </mat-form-field>
+
+    <mat-form-field class="form">
+      <mat-label>Nazwisko</mat-label>
+      <input formControlName="lastname" type="text" matInput/>
+    </mat-form-field>
+
+    <mat-form-field class="form">
+      <mat-label>Hasło</mat-label>
+      <input formControlName="password" [type]="passwordHidden ? 'password' : 'text'" matInput/>
+      <button mat-icon-button matSuffix (click)="passwordHidden = !passwordHidden">
+        <mat-icon>{{passwordHidden ? 'visibility_off' : 'visibility'}}</mat-icon>
+      </button>
+      <mat-error *ngIf="!registerForm.get('password')!.valid">{{getPasswordError()}}</mat-error>
+
+    </mat-form-field>
+    <mat-form-field class="form">
+      <mat-label>Powtórz hasło</mat-label>
+      <input formControlName="repeatPassword" [type]="repeatPasswordHidden ? 'password' : 'text'" matInput/>
+      <button mat-icon-button matSuffix (click)="repeatPasswordHidden = !repeatPasswordHidden">
+        <mat-icon>{{repeatPasswordHidden ? 'visibility_off' : 'visibility'}}</mat-icon>
+      </button>
+      <mat-error *ngIf="!registerForm.get('repeatPassword')!.valid">{{getPasswordRepeatError()}}</mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="form">
+      <mat-label>Wybierz rodzaj konta</mat-label>
+      <mat-select (value) = "role" formControlName = "role">
+        <mat-option *ngFor="let role of roles" [value]="role">{{ role.roleName }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field *ngIf="registerForm.controls.role.value && registerForm.controls.role.value.roleName == 'Wykładowca'" class="form">
+      <mat-label>Dlaczego ty?</mat-label>
+      <textarea
+      matInput
+      formControlName="motivation" 
+      cdkTextareaAutosize
+      #autosize="cdkTextareaAutosize"
+      cdkAutosizeMinRows="1"
+      cdkAutosizeMaxRows="5"
+    ></textarea>
+    </mat-form-field>
+    <button [disabled]="!registerForm.valid" id="submit-button" mat-raised-button type="submit">Zarejestruj się</button>
+  </form>
+</mat-card>
+</div>

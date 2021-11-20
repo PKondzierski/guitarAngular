@@ -1,0 +1,29 @@
+<div class="container">
+  <mat-drawer-container class="drawer-container">
+    <mat-drawer #sectionMenu mode="over">
+      <div class="side-content">
+        <app-section></app-section>
+      </div>
+    </mat-drawer>
+    <mat-drawer-content *ngIf="lesson && lesson.duration">
+      <div
+        fxLayout="row"
+        fxLayout.lt-lg="row"
+        fxFlexFill
+      >
+        <div [fxFlex]="60" class="sec2" fxFlex.lt-lg="50">
+          <app-video></app-video>
+
+        </div>
+        <div [fxFlex]="40" class="sec2" fxFlex.lt-lg="50">
+
+          <app-chord></app-chord>
+
+        </div>
+      </div>
+    </mat-drawer-content>
+    <mat-drawer-content *ngIf="lesson && !lesson.duration ">
+      <app-upload-video></app-upload-video>
+    </mat-drawer-content>
+  </mat-drawer-container>
+</div>

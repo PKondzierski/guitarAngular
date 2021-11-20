@@ -1,0 +1,31 @@
+@use '~@angular/material' as mat;
+@use './app/components/home/home-theme' as home;
+@use './app/modules/security/register/register-theme' as register;
+@use './app/modules/course/lessons/lesson-theme' as lesson;
+@use './app/modules/create-course/create-course-theme' as createCourse;
+@include mat.core();
+
+
+$dark-primary: mat.define-palette(mat.$brown-palette, 900);
+$dark-accent: mat.define-palette(mat.$orange-palette, 400);
+$dark-warn: mat.define-palette(mat.$blue-grey-palette, 600);
+$dark-theme: mat.define-light-theme(
+    (
+      color: (
+        primary: $dark-primary,
+        accent: $dark-accent,
+        warn : $dark-warn,
+      ))
+);
+
+.dark-theme {
+  @include mat.all-component-themes($dark-theme);
+  @include register.form($dark-theme);
+  @include home.home($dark-theme);
+  @include lesson.lesson($dark-theme);
+  @include createCourse.basicInformation($dark-theme);
+
+}
+
+@include register.register($dark-theme);
+

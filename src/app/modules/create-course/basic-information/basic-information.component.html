@@ -1,0 +1,63 @@
+<div class="container">
+
+    <mat-card>
+        <div class="content">
+            <h1>Podstawowe informacje o kursie</h1>
+            <form [formGroup]="basicInformationGroup" (ngSubmit)="save()">
+
+                <div fxLayout="row" fxLayout.xs="row">
+                    <div fxFlex="15" class="left" fxFlex.xs="15">
+                        <div class="text-wrapper">
+                            <span class="text"> Tytuł</span>
+                        </div>
+                        <mat-divider vertical></mat-divider>
+                    </div>
+                    <div fxFlex="85" class="right">
+                        <mat-form-field>
+                            <input formControlName="title" matInput />
+                            <mat-error *ngIf="!basicInformationGroup.get('title')!.valid">{{getTitleError()}}
+                            </mat-error>
+                        </mat-form-field>
+                    </div>
+
+                </div>
+                <div fxLayout="row" fxLayout.xs="column">
+                    <div fxFlex="15" class="left" fxFlex.xs="15">
+                        <div class="text-wrapper">
+                            <span class="text"> Opis</span>
+                        </div>
+                        <mat-divider vertical></mat-divider>
+                    </div>
+                    <div fxFlex="85" class="right">
+                        <mat-form-field>
+                            <textarea formControlName="description" rows="1" matInput></textarea>
+                            <mat-error *ngIf="!basicInformationGroup.get('description')!.valid">
+                                {{getDescriptionError()}}</mat-error>
+                        </mat-form-field>
+                    </div>
+
+                </div>
+                <div fxLayout="row" fxLayout.xs="column">
+                    <div fxFlex="15" class="left" fxFlex.xs="15">
+                        <div class="text-wrapper">
+                            <span class="text"> O autorze</span>
+                        </div>
+                        <mat-divider vertical></mat-divider>
+                    </div>
+                    <div fxFlex="85" class="right">
+                        <mat-form-field>
+                            <textarea formControlName="aboutAuthor" rows="1" matInput></textarea>
+                        </mat-form-field>
+                    </div>
+
+                </div>
+                <div class="submit-wrapper">
+                    <button [disabled]="submitDisabled" color="accent" class="submit" mat-raised-button
+                        type="submit">Zapisz i rozpocznij tworzenie kursu</button>
+                    <mat-card *ngIf="responseError.length != 0" class="response-error warn">{{responseError}}</mat-card>
+                </div>
+            </form>
+
+        </div>
+    </mat-card>
+</div>

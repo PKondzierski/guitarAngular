@@ -1,0 +1,23 @@
+.container {
+  min-height: calc(100vh - 64px);
+}
+
+.drawer-container {
+  min-height: calc(100vh - 64px);
+}
+
+.side-content {
+  width: 500px;
+  height: 100%;
+}
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+.video{
+  width: 50%;
+  height: auto;
+}
+inside-container{
+  width: 100%;
+  height: 100%;
+}

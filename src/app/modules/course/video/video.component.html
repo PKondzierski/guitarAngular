@@ -1,0 +1,76 @@
+ <div [ngClass]="player.isMobile ? '' : theatherMode  ? 'theather' : 'normal'">
+  <div (click)="player.paused = !player.paused" *ngIf="theatherMode" class="left panel"></div>
+  <vm-player
+    #player
+  >
+    <vm-video>
+      <source [src]="videoUrl" type="video/mp4"/>
+    </vm-video>
+    <vm-ui>
+      <vm-click-to-play></vm-click-to-play>
+      <vm-spinner></vm-spinner>
+
+      <div [style.bottom]="fretboardOnScreen ? '126px' : '1px'" class="beating-wrapper" *ngIf="actualChord && beatingOnScreen">
+        <div class="beating" *ngFor="let beat of actualChord.beatingList">
+          <mat-icon class="beating-item" *ngIf="beat.beat == beatingType.UP">arrow_upward</mat-icon>
+          <mat-icon class="beating-item" *ngIf="beat.beat == beatingType.DOWN">arrow_downward</mat-icon>
+          <mat-icon class="beating-item" *ngIf="beat.beat == beatingType.PAUSE">crop_portrait</mat-icon>
+        </div>
+      </div>
+
+      <div *ngIf="fretboardOnScreen" class="fretboard-wrapper">
+        <app-fretboard class="fretboard"></app-fretboard>
+      </div>
+      <vm-controls [activeDuration]="2000" hide-on-mouse-leave>
+        <div
+          class="background-controls"
+        ></div>
+        <vm-control-group>
+          <vm-control-group>
+            <vm-scrubber-control></vm-scrubber-control>
+          </vm-control-group>
+
+          <vm-control-group space="top">
+            <vm-playback-control tooltipDirection="right"></vm-playback-control>
+            <vm-volume-control tooltipDirection="right"></vm-volume-control>
+            <vm-current-time tooltipDirection="right"></vm-current-time>
+            <vm-control (click)="hideFretboard()">
+              <mat-icon >keyboard</mat-icon>
+              <vm-tooltip *ngIf="fretboardOnScreen">Schowaj gryf na filmie</vm-tooltip>
+              <vm-tooltip *ngIf="!fretboardOnScreen">Pokaż gryf na filmie</vm-tooltip>
+            </vm-control>
+            <vm-control (click)="hideFretboardUnderVideo()">
+              <mat-icon >keyboard_hide</mat-icon>
+              <vm-tooltip *ngIf="fretboardUnderScreen">Schowaj gryf pod filmem</vm-tooltip>
+              <vm-tooltip *ngIf="!fretboardUnderScreen">Pokaż gryf pod filmem</vm-tooltip>
+            </vm-control>
+            <vm-control (click)="beatingOnScreen = !beatingOnScreen">
+              <mat-icon *ngIf="beatingOnScreen" >music_note</mat-icon>
+              <vm-tooltip *ngIf="beatingOnScreen">Schowaj bicie gitarowe</vm-tooltip>
+              <mat-icon *ngIf="!beatingOnScreen" >music_off</mat-icon>
+              <vm-tooltip *ngIf="!beatingOnScreen">Pokaż bicie gitarowe</vm-tooltip>
+            </vm-control>
+            <vm-control-spacer></vm-control-spacer>
+            <vm-control *ngIf="!player.isMobile && innerWidth > 1300" (click)="changeTheatherMode()">
+              <mat-icon *ngIf="beatingOnScreen" >switch_camera</mat-icon>
+              <vm-tooltip tooltipDirection="left" *ngIf="theatherMode">Normalny tryb</vm-tooltip>
+              <vm-tooltip tooltipDirection="left" *ngIf="theatherMode">Tryb kinowy</vm-tooltip>
+            </vm-control>
+            <vm-fullscreen-control
+            tooltipDirection="left"
+            ></vm-fullscreen-control>
+          </vm-control-group>
+        </vm-control-group>
+      </vm-controls>
+    </vm-ui>
+
+  </vm-player>
+  <div (click)="player.paused = !player.paused" *ngIf="theatherMode" class="right panel"></div>
+
+</div>
+
+<div *ngIf="fretboardUnderScreen" style="width: 99%;" >
+  <app-fretboard></app-fretboard>
+</div>
+
+

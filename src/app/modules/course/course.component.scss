@@ -1,0 +1,16 @@
+#container {
+  min-height: 100%;
+  display: flex;
+}
+
+
+.tabs {
+  min-height: 20vh;
+}
+.theather {
+  justify-content: center;
+}
+mat-tab-body {
+  display: flex;
+  justify-content: center;
+}

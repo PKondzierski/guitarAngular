@@ -1,0 +1,25 @@
+<div class="container">
+    <div cdkDropList class="list" (cdkDropListDropped)="dropSection($event)">
+        <mat-accordion>
+            <mat-expansion-panel cdkDrag *ngFor="let section of course?.sections" class="expansion-panel"
+                (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                <mat-expansion-panel-header>
+                    <mat-panel-title class="title"><span>{{section.name}} </span></mat-panel-title>
+                    <mat-panel-description></mat-panel-description>
+                    <div class="buttons">
+                        <button mat-icon-button (click)="deleteSection(section)"><mat-icon>delete</mat-icon></button>
+                      </div>
+                </mat-expansion-panel-header>
+
+
+                <app-lesson [section]="section" [course]="course"></app-lesson>
+
+            </mat-expansion-panel>
+            <div class="add">
+                <button (click)="addSection()" color="accent" mat-raised-button>
+                    <mat-icon>add</mat-icon>
+                </button>
+            </div>
+        </mat-accordion>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+<div *ngIf = "courseService.course" [ngClass]= "isTheather? 'container-theather' : ''" id="container">
+    <mat-card class="example-card">
+        <mat-card-title>Dodaj notatke</mat-card-title>
+        <mat-card-subtitle>Czas: {{this.actualMinute}}:{{this.actualSecond}}</mat-card-subtitle>
+        <mat-card-content>
+            <mat-form-field style="width: 100%;">
+                <mat-label>Notatka</mat-label>
+                <textarea [(ngModel)] = "note" rows="1" matInput></textarea>
+              </mat-form-field>        
+            </mat-card-content>
+        <mat-card-actions>
+          <button (click)="addNote()" mat-button>Dodaj</button>
+        </mat-card-actions>
+      </mat-card>
+
+      
+      <mat-list>
+          <span style="font-size: 24px; font-weight: 500; padding: 0 16px">Twoje notatki</span>
+        <mat-list-item style="cursor: pointer;" (click)="courseService.actualTime.next(note.time)" *ngFor="let note of courseService.notes">
+            <h3 matLine> {{note.note}} </h3>
+            <p  matLine> {{note.time | referenceLesson}} </p> 
+            <mat-divider></mat-divider>
+        </mat-list-item>
+    </mat-list>
+</div>

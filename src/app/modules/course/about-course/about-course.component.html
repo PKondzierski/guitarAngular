@@ -1,0 +1,8 @@
+<div *ngIf = "courseService.course" [ngClass]= "isTheather? 'container-theather' : ''" id="container">
+  <div  class="header"><h2>{{ courseService.course.title }}</h2></div>
+  <mat-divider></mat-divider>
+  <span class="content">{{courseService.course!.description}}</span>
+  <div class="header"><h2>Autor</h2></div>
+  <mat-divider></mat-divider>
+  <span class="content">{{courseService.course!.aboutAuthor}}</span>
+</div>

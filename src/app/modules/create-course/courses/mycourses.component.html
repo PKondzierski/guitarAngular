@@ -1,0 +1,30 @@
+<div class="container">
+
+    <button routerLink="/basic" color="warning" class="create-course" mat-raised-button>Stwórz nowy kurs</button>
+
+<div class="headers">
+        <div class="header">Nazwa</div>
+        <div class="header">Czas trwania</div>
+        <div class="header">Ilość lekcji</div>
+        <div class="header">Zaakceptowany</div>
+        <div class="header">Akcje</div>
+</div>
+
+<div class="list">
+    <div class="items" *ngFor="let course of courses; let i=index">
+        <div class="item">{{ course.name }}</div>
+        <div class="item" *ngIf="course.duration">{{ course.duration | secondsToMinutes }}</div>
+        <div class="item" *ngIf="!course.duration">0 minut</div>
+        <div class="item" *ngIf="course.numberOfLessons"> {{ course.numberOfLessons }}</div>
+        <div class="item" *ngIf="!course.numberOfLessons"> 0</div>
+        <div class="item" *ngIf="!course.enabled"> Nie</div>
+        <div class="item" *ngIf="course.enabled"> Tak</div>
+        <div class="item">
+            <button mat-icon-button (click)="edit(course)"><mat-icon>edit</mat-icon></button>
+            <button *ngIf="!toDelete[i]"  mat-icon-button (click)="markDelete(i)"><mat-icon>delete</mat-icon></button>
+            <button style="color: red;" *ngIf="toDelete[i]"  mat-icon-button (click)="delete(course)"><mat-icon>delete</mat-icon></button>
+        </div>
+    </div>
+</div>
+
+</div>

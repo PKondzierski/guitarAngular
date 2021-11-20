@@ -1,0 +1,29 @@
+<button *ngIf="role && role === LECTURER" routerLink="/mycourses" mat-button>
+  <mat-icon>book</mat-icon>
+  <span>Moje kursy</span>
+</button>
+
+<button *ngIf="role && role === ADMIN" routerLink="/admin" mat-button>
+  <mat-icon>perm_identity</mat-icon>
+  <span>Panel admina</span>
+</button>
+
+<button *ngIf="role" routerLink="/courses" mat-button>
+  <mat-icon>school icon</mat-icon>
+  <span>Kursy</span>
+</button>
+
+<button mat-button>
+  <mat-icon>music_note</mat-icon>
+  <span>Akordy</span>
+</button>
+
+<button *ngIf="!role" routerLink="/login" mat-button>
+  <mat-icon >login</mat-icon>
+  <span>Zaloguj</span>
+</button>
+
+<button *ngIf="role" (click)="tokenStorage.logout()" mat-button>
+  <mat-icon >logout</mat-icon>
+  <span>Wyloguj</span>
+</button>

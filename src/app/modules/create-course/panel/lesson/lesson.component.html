@@ -1,0 +1,22 @@
+<div
+  cdkDropList
+  (cdkDropListDropped)="dropLesson($event, section)"
+  class="list"
+>
+  <div cdkDrag *ngFor="let lesson of section.lessons" class="content">
+    <div class="lesson">
+      <mat-card>
+      
+        <div class="single-lesson">
+          <span class="name-time" (click)="moveToLesson(lesson)">{{ lesson.name }}  <span class="duration" *ngIf="lesson.duration">| {{ lesson.duration | secondsToMinutes }}</span>
+        </span>
+        </div>
+      </mat-card>
+    </div>
+  </div>
+  <div class="add">
+    <button (click)="addLesson(section)" color="accent" mat-raised-button>
+      <mat-icon>add</mat-icon>
+    </button>
+  </div>
+</div>

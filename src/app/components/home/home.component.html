@@ -1,0 +1,21 @@
+<!-- <div style="width: 300px; height: 300px;"> -->
+
+<div (click)="homePage()" class="logo">
+  <div [@penAnimation]="registerButton" class="pen">
+    <div class="courses">
+      <span>Kursy <br/>Gitarowe!</span>
+    </div>
+  </div>
+  <button
+
+    routerLink="/register"
+    id="register"
+    [@registerAnimation]="registerButton"
+    mat-raised-button
+  >
+    Zarejestruj się
+  </button>
+</div>
+
+<!-- </div> -->
+<!--  -->

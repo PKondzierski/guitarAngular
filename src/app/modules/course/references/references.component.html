@@ -1,0 +1,9 @@
+<div [ngClass]= "isTheather? 'container-theather' : ''" id="container" >
+<mat-list>
+    <mat-list-item style="cursor: pointer;" (click)="jumpToTimeByReference(reference)" *ngFor="let reference of courseService.references">
+        <h3 matLine> {{reference.name}} </h3>
+        <p matLine> {{reference.begin | referenceLesson}} </p> 
+        <mat-divider></mat-divider>
+    </mat-list-item>
+</mat-list>
+</div>

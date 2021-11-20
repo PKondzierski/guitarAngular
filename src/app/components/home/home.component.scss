@@ -1,0 +1,66 @@
+.logo {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../../../assets/home/home.jpg");
+  height: calc(100vh - 64px);
+  width: auto;
+  overflow: hidden;
+  position: relative;
+
+  .pen {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 15%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    border-radius: 100% 0% 46% 54% / 47% 0% 100% 53%;
+    transform: rotate(160deg);
+    box-shadow: inset 0px 0px 16px 3px rgba(0, 0, 0, 0.52);
+
+    .courses {
+      position: absolute;
+      top: 30%;
+      left: 19%;
+      transform: translate(-50%, -50%);
+      transform: rotate(-140deg);
+      text-align: center;
+      font-size: 1.2rem;
+      font-family: "Franklin Gothic Medium";
+      color: white;
+    }
+  }
+}
+
+#register {
+  position: absolute;
+  width: 40%;
+  height: 40px;
+  top: 85%;
+  left: 85%;
+  padding: 0;
+  margin: 0;
+  transform: translate(-50%, -50%);
+  box-shadow: inset 0px 0px 12px 2px rgba(0, 0, 0, 0.52);
+
+}
+
+@media only screen and (min-width: 800px) and (min-height: 870px) {
+  .logo {
+    .pen {
+      width: 200px;
+      height: 200px;
+
+      .courses {
+        left: 20%;
+        font-size: 2rem;
+      }
+    }
+
+    #register {
+      width: 30%;
+    }
+  }
+}

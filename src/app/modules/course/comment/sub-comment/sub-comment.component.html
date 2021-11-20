@@ -1,0 +1,11 @@
+<mat-list>
+    <mat-list-item style="height: fit-content; width: 100%">
+        <div style="display: flex; flex-direction: column; width: 100%;">
+           <span style="font-size: 1.5rem; margin-bottom: 10px;"> {{comment!.username}} </span>
+        {{comment!.comment}}
+        <div style="display: flex; justify-content: space-between;">
+        <span style="font-size: 0.8rem; margin: 5px 0;" > {{comment!.created | date:'dd/MM/yyyy : HH:mm'}} </span> 
+      </div>
+      </div>
+    </mat-list-item>
+</mat-list>

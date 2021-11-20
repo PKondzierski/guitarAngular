@@ -1,0 +1,64 @@
+<div class="mat-elevation-z0 container">
+  <button style="width: 100%;" mat-raised-button (click)="refreshCopy()">Skopiuj akordy</button>
+    <table mat-table [dataSource]="dataSource">
+  
+      <ng-container matColumnDef="number">
+        <th mat-header-cell *matHeaderCellDef> #</th>
+        <td mat-cell *matCellDef="let element; let i = index"> {{i+1}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="startChordTime">
+        <th  mat-header-cell *matHeaderCellDef> Początek akordu</th>
+        <td class="cursor" (click)="jumpToChord(element.startChordTime+0.000001)" mat-cell *matCellDef="let element"> {{element.startChordTime | number:'1.1-2'}} </td>
+      </ng-container>
+  
+      
+      <ng-container matColumnDef="endChordTime">
+        <th   mat-header-cell *matHeaderCellDef> Koniec akordu </th>
+        <td class="cursor" (click)="jumpToChord(element.endChordTime-0.000001)" mat-cell *matCellDef="let element"> {{element.endChordTime | number:'1.1-2'}} </td>
+      </ng-container>
+  
+      
+      <ng-container matColumnDef="beating">
+        <th mat-header-cell *matHeaderCellDef> Bicie gitarowe </th>
+        <td mat-cell *matCellDef="let element; let j = index"> 
+          <div class="beating-column">
+            <ng-container *ngIf="element.beatingList.length != 0">
+              <div *ngFor="let beat of element.beatingList">
+                <mat-icon class="beating-item" (click)="deleteBeat(element, beat)" *ngIf="beat.beat == beatingType.UP">arrow_upward</mat-icon>
+                <mat-icon class="beating-item" (click)="deleteBeat(element, beat)" *ngIf="beat.beat == beatingType.DOWN">arrow_downward</mat-icon>
+                <mat-icon class="beating-item" (click)="deleteBeat(element, beat)" *ngIf="beat.beat == beatingType.PAUSE">crop_portrait</mat-icon>
+              </div>              
+            </ng-container>
+            <div class="arrows">
+              <button (click)="addUpBeat(element)" class="add-button" mat-icon-button> <mat-icon class="add-icon">arrow_upward</mat-icon></button>
+              <button (click)="addPauseBeat(element)" class="add-button" mat-icon-button> <mat-icon class="add-icon">crop_16_9</mat-icon></button>
+              <button (click)="addDownBeat(element)" class="add-button" mat-icon-button > <mat-icon class="add-icon">arrow_downward</mat-icon></button>
+            </div>
+            <div  class="select" >
+              <mat-form-field class="form">
+                <mat-label>Skopiuj akord</mat-label>
+                <input [ngModel]="copyOfBeatingVisible[j]" (keyup)="addCopy($event, j)" class="input" type="number" matInput/>
+              </mat-form-field>
+          </div>
+          <button (click)="deleteChord(element)" class="button-delete" mat-icon-button><mat-icon  class="delete-icon">delete</mat-icon></button>
+      </div>
+        </td>
+        
+      </ng-container>
+  
+      
+      <!-- <ng-container matColumnDef="symbol">
+        <th mat-header-cell *matHeaderCellDef> Symbol </th>
+        <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+      </ng-container> -->
+  
+      <tr mat-header-row *matHeaderRowDef="columnsToDisplay "></tr>
+      <tr class="element"  mat-row *matRowDef="let row; columns: columnsToDisplay ;"></tr>
+    </table>
+  
+    <!-- <mat-paginator #paginator [pageSizeOptions]="[5, 10, 20]"
+                   showFirstLastButtons >
+    </mat-paginator> -->
+  </div>
+

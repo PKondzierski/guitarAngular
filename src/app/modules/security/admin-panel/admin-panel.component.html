@@ -1,0 +1,60 @@
+<div class="container">
+    <div class="users">
+
+        <div class="headers">
+            <div style="width: 10%;" title="Login" class="header">Login</div>
+            <div style="width: 20%;" title="Email" class="header">Email</div>
+            <div style="width: 20%;" title="Imie i nazwisko" class="header">Imie i nazwisko</div>
+            <div style="width: 15%;" title="Uprawnienia" class="header">Uprawnienia</div>
+            <div (click) = "sortByActive()" style="width: 15%; cursor: pointer;" title="Aktywny" class="header">Aktywny <mat-icon *ngIf="sortedByActive != undefined && sortedByActive === false" style="font-size: 16px;">arrow_upward</mat-icon>
+                <mat-icon *ngIf="sortedByActive != undefined && sortedByActive === true" style="font-size: 16px;">arrow_downward</mat-icon></div>
+            <div style="width: 20%;" title="Motywacja" class="header">Motywacja</div>
+        </div>
+
+        <div class="list">
+            <div class="items" *ngFor="let user of users; let i=index">
+                <div style="width: 10%;" class="item" title="{{ user.username }}">{{ user.username }}</div>
+                <div style="width: 20%;" class="item" title="{{ user.email }}"> {{ user.email }}</div>
+                <div style="width: 20%;" class="item" title="{{ user.firstname }} {{ user.lastname }}"> {{ user.firstname }} {{ user.lastname }}</div>
+                
+                <div style="width: 15%;" class="item"> {{ user.role?.roleName }}</div>
+                <div style="width: 15%;" class="item" id = "accepted" (click)="changeUserStatus(user)" *ngIf="user.enabled">Tak</div>
+                <div style="width: 15%;" class="item" id = "accepted" (click)="changeUserStatus(user)" *ngIf="!user.enabled">Nie</div>
+                <div style="width: 20%;" class="item" title="{{user.motivation}}" *ngIf="user.motivation">{{user.motivation}}</div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="line"></div>
+
+    <div class="courses">
+
+        <div class="headers">
+            <div class="header">Nazwa</div>
+            <div class="header">Czas trwania</div>
+            <div class="header">Ilość lekcji</div>
+            <div class="header">Zaakceptowany</div>
+            <div class="header">Akcje</div>
+        </div>
+
+        <div class="list">
+            <div class="items" *ngFor="let course of courses; let i=index">
+                <div class="item">{{ course.name }}</div>
+                <div class="item" *ngIf="course.duration">{{ course.duration | secondsToMinutes }}</div>
+                <div class="item" *ngIf="!course.duration">0 minut</div>
+                <div class="item" *ngIf="course.numberOfLessons"> {{ course.numberOfLessons }}</div>
+                <div class="item" *ngIf="!course.numberOfLessons"> 0</div>
+                <div class="item" (click)="changeCourseStatus(course)" id = "accepted" *ngIf="!course.enabled"> Nie</div>
+                <div class="item" (click)="changeCourseStatus(course)" id = "accepted" *ngIf="course.enabled"> Tak</div>
+                <div class="item">
+                    <button mat-icon-button (click)="checkCourse(course)"><mat-icon>remove_red_eye</mat-icon></button>
+                    <button *ngIf="!toDelete[i]"  mat-icon-button (click)="markDelete(i)"><mat-icon>delete</mat-icon></button>
+                    <button style="color: red;" *ngIf="toDelete[i]"  mat-icon-button (click)="delete(course)"><mat-icon>delete</mat-icon></button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

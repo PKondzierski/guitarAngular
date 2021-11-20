@@ -1,0 +1,42 @@
+<mat-toolbar color="accent">
+  <mat-toolbar-row>
+    <mat-icon
+      routerLink="/"
+      *ngIf="showLogo"
+      id="logo"
+      svgIcon="logo"
+    ></mat-icon>
+    <ng-container *ngIf="showMenu">
+      <button mat-icon-button (click)="sectionMenu.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+       <ng-container *ngIf="lessonActive">
+        <button mat-icon-button (click)="panelService.updateLesson()">
+          <mat-icon>save</mat-icon>
+        </button>
+        <button mat-icon-button>
+          <mat-icon>delete</mat-icon>
+        </button>
+       </ng-container>
+      
+  </ng-container>
+
+    <span class="example-spacer"></span>
+
+    <app-static-navbar *ngIf="!mobileDevice"></app-static-navbar>
+
+    <button
+      *ngIf="mobileDevice"
+      (click)="dropDownMenu = !dropDownMenu"
+      mat-icon-button
+    >
+      <mat-icon>menu</mat-icon>
+    </button>
+  </mat-toolbar-row>
+
+  <ng-container *ngIf="mobileDevice">
+    <div id="dropdown-navbar" [@openClose]="{value: dropDownMenu ? 'open' : 'closed'}">
+      <app-dropdown-navbar *ngIf="dropDownMenu"></app-dropdown-navbar>
+    </div>
+  </ng-container>
+</mat-toolbar>

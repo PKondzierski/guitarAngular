@@ -1,0 +1,103 @@
+
+  <div class="container">
+<vm-player id="vim" #player>
+  <vm-video>
+    <source [src]="video" type="video/mp4" />
+  </vm-video>
+  <vm-ui>
+    <vm-click-to-play></vm-click-to-play>
+    <vm-spinner></vm-spinner>
+    <vm-controls [activeDuration]="2000" hide-on-mouse-leave>
+      <div class="background-controls"></div>
+
+      <vm-control-group>
+        <vm-control-group>
+          <vm-scrubber-control></vm-scrubber-control>
+        </vm-control-group>
+
+        <vm-control-group space="top">
+          <vm-playback-control tooltipDirection="right"></vm-playback-control>
+          <vm-current-time tooltipDirection="right"></vm-current-time>
+          <!-- <span style="color: white;">{{player.currentTime}}</span> -->
+          
+          <div style="display: flex; justify-content: center; align-items: center;">
+            <vm-control [hidden]="actualChord.value ? true : false" keys="k" (click)="addAcord()">
+              <mat-icon >add_circle_outline</mat-icon>
+              <vm-tooltip>Dodaj akord</vm-tooltip>
+            </vm-control>
+            
+            <div *ngIf="error != ''"
+            class="chord-error"
+            matBadge="!"
+            matBadgePosition="before"
+            matBadgeColor="warn"   
+            >
+            <span class="chord-text-error">{{this.error}}</span>
+          </div>
+          <div class="form">
+            <form [formGroup]="chordTimesGroup">
+              <mat-form-field class="form">
+                <mat-label>Początek akordu</mat-label>
+                <input class="input" formControlName="startChordTime" type="number" matInput/>
+                <mat-error *ngIf="!chordTimesGroup.get('startChordTime')!.valid">{{getStartChordTimeError()}}</mat-error>
+              </mat-form-field>
+              <mat-divider [vertical]="true"></mat-divider>
+              <mat-form-field class="form">
+                <mat-label>Koniec akordu</mat-label>
+                <input class="input" formControlName="endChordTime" type="number" matInput/>
+                <mat-error *ngIf="!chordTimesGroup.get('endChordTime')!.valid">{{getEndChordTimeError()}}</mat-error>
+              </mat-form-field>
+            </form>
+          </div>
+          
+          <vm-control *ngIf="actualChord.value != null"  (click)="updateChord()">
+            <mat-icon >update</mat-icon>
+            <vm-tooltip>Zaktualizuj akord</vm-tooltip>
+          </vm-control>
+          
+          <vm-control (click)="swapTimes()">
+            <mat-icon >swap_horiz</mat-icon>
+            <vm-tooltip>Przenieś czas końca akordu na czas początku</vm-tooltip>
+          </vm-control>
+        </div>
+        <vm-control-spacer></vm-control-spacer>
+        <vm-volume-control tooltipDirection="right"></vm-volume-control>
+        <vm-fullscreen-control
+        tooltipDirection="left"
+            keys="f"
+          ></vm-fullscreen-control>
+        </vm-control-group>
+      </vm-control-group>
+    </vm-controls>
+  </vm-ui>
+</vm-player>
+<div class="fret-board">
+  <app-fretboard (click)="addStringToChord($event)"></app-fretboard>
+
+</div>
+
+<div style="display: flex;">
+  <div class="section">
+    <form [formGroup]="referenceForm">
+      <mat-form-field appearance="fill" class="form">
+        <mat-label>Czas początku sekcji mm:ss</mat-label>
+        <input ng-model='val | number: 2' class="input" formControlName="begin" type="text"  matInput/>
+        <mat-error *ngIf="!referenceForm.get('begin')!.valid">{{getReferenceError()}}</mat-error>
+  
+  
+      </mat-form-field>
+      <mat-form-field appearance="fill" class="form">
+        <mat-label>Nazwa sekcji</mat-label>
+        <input class="input" formControlName="name" type="text" matInput/>
+  </mat-form-field>
+    </form>
+    <button class="submit-section" (click)=addReference() mat-button>Dodaj sekcje</button>
+  </div>
+  <mat-list>
+    <mat-list-item *ngFor="let reference of references; let i = index">
+        <h3 matLine> {{reference.name}} </h3>
+        <p style="cursor: pointer;" (click)="player.currentTime = reference.begin" matLine> {{reference.begin | referenceLesson}} </p> 
+        <button (click)="deleteReference(i)" class="button-delete" mat-icon-button><mat-icon>delete</mat-icon></button>
+    </mat-list-item>
+  </mat-list>
+</div>

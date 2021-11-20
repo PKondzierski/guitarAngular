@@ -1,0 +1,20 @@
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+
+}
+
+#navbar {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  height: 50px;
+  width: 100%;
+}
+
+#content {
+  z-index: 2;
+  width: 100%;
+  padding-top: 64px;
+}
