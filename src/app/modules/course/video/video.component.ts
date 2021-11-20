@@ -74,7 +74,7 @@ export class VideoComponent implements OnInit, OnDestroy {
         const vim = this.elRef.nativeElement.querySelector('video');
         vim.load();
         this.player.buffering = false;
-        this.player.play();
+        // this.player.play();
       },250)
     }));
 

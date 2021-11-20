@@ -3,8 +3,9 @@
 <div class="container">
 <mat-card color="primary" id="form-div">
   <form [formGroup]="registerForm" (ngSubmit)="register()">
-    <span>Wypełnij pola i</span>
-    <span style="margin-bottom: 5px;">dołącz już dziś!</span>
+    <span *ngIf="!error">Wypełnij pola i</span>
+    <span *ngIf="!error" style="margin-bottom: 5px;">dołącz już dziś!</span>
+    <span color="error" *ngIf="error" style="border: 1px solid black; width: 70%;">{{error}}</span>
     <mat-form-field class="form">
       <mat-label>Email</mat-label>
       <input formControlName="email" type="email" matInput/>

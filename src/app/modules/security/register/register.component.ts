@@ -26,7 +26,7 @@ export class RegisterComponent implements OnInit, OnDestroy {
   roles: Role[] = [];
   role?: Role;
   @ViewChild('autosize') autosize!: CdkTextareaAutosize;
-
+  error: string = '';
   //Password requirment
   passRequirement = {
     passwordMinLowerCase: 1,
@@ -97,8 +97,9 @@ export class RegisterComponent implements OnInit, OnDestroy {
       }
       this.http.register(user).subscribe(()=>{
         this.route.navigateByUrl('/login')
+      }, () => {
+        this.error = "Email lub login już istnieje";
       });
-      
     }
   }
 
