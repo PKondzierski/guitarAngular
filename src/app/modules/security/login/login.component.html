@@ -4,7 +4,7 @@
 <mat-card color="primary" id="form-div">
   <form [formGroup]="loginForm" (ngSubmit)="login()">
 
-    <mat-error style="margin-bottom: 25px;">{{badCredentials}}</mat-error>
+    <mat-error style="margin-bottom: 25px; max-width: 75%;">{{badCredentials}}</mat-error>
     <mat-form-field class="form">
       <mat-label>Login</mat-label>
       <input formControlName="username" type="text" matInput/>

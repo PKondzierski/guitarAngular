@@ -14,8 +14,8 @@ export class LoginComponent implements OnInit {
 
   passwordHidden: boolean = true;
   loginForm: FormGroup = new FormGroup({
-    username: new FormControl('yoyo', [Validators.required]),
-    password: new FormControl('admin', [Validators.required])
+    username: new FormControl('', [Validators.required]),
+    password: new FormControl('', [Validators.required])
   });
   badCredentials: string = '';
 
@@ -35,7 +35,7 @@ export class LoginComponent implements OnInit {
       this.tokenStorage.saveTokenAndRole(response.headers.get('Authorization'));
       this.router.navigate(['courses']);
     }, (error) => {
-      this.badCredentials = 'Błędne dane';
+      this.badCredentials = 'Błędne dane lub konto nieaktywne';
     });
     }
   }

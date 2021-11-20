@@ -95,10 +95,8 @@ export class RegisterComponent implements OnInit, OnDestroy {
         motivation: this.registerForm.controls.motivation.value,
         role: this.registerForm.controls.role.value
       }
-      this.http.register(user).pipe((finalize(() => {
-        // this.route.navigate(['/'])
-      }))).subscribe(()=>{
-        console.log("send");
+      this.http.register(user).subscribe(()=>{
+        this.route.navigateByUrl('/login')
       });
       
     }
