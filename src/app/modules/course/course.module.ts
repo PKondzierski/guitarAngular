@@ -16,6 +16,7 @@ import { CoursesComponent } from './courses/courses.component';
 import { NoteComponent } from './note/note.component';
 import { CommentComponent } from './comment/comment.component';
 import { SubCommentComponent } from './comment/sub-comment/sub-comment.component';
+import { ChordComponent } from './chord/chord.component';
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import { SubCommentComponent } from './comment/sub-comment/sub-comment.component
     NoteComponent,
     CommentComponent,
     SubCommentComponent,
+    ChordComponent,
     
   ],
   imports: [

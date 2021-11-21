@@ -11,6 +11,7 @@ import { CoursesComponent } from './modules/course/courses/courses.component';
 import { LoginGuardService } from './global-services/login-guard.service';
 import { MyCoursesComponent } from './modules/create-course/courses/mycourses.component';
 import { AdminPanelComponent } from './modules/security/admin-panel/admin-panel.component';
+import { ChordComponent } from './modules/course/chord/chord.component';
 
 const ADMIN: string = 'Admin';
 const STUDENT: string = 'Kursant';
@@ -79,6 +80,10 @@ const routes: Routes = [
     data: {
       expectedRole: [ADMIN]
     }
+  },
+  {
+    path: 'chords',
+    component: ChordComponent,
   },
 ];
 

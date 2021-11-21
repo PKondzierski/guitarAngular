@@ -8,6 +8,7 @@ import { CourseModel } from '../../create-course/model/course-model';
 import { ReferenceLesson } from '../../create-course/model/reference-lesson-model';
 import { CourseInfo } from '../courses/courseInfo';
 import { Note } from '../note/note';
+import { Chord } from '../chord/chord';
 
 @Injectable({
   providedIn: 'root'
@@ -54,5 +55,7 @@ export class CourseService {
   setComments(comments: Comment[]) {
     this.comments = comments;
   }
-
+  getChords(): Observable<Chord[]> {
+    return this.http.get<Chord[]>("https://guitar-kondzierski.herokuapp.com/music");
+  }
 }
