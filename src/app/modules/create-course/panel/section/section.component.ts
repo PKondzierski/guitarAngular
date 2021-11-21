@@ -80,8 +80,10 @@ export class SectionComponent implements OnInit, OnDestroy {
   }
 
   deleteSection(section: SectionModel){
-    
-  }
+    this.http.deleteSection(section).subscribe(() => {
+     window.location.reload();
+    })
+ }
 
 
 }

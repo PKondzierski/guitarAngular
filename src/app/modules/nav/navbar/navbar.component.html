@@ -14,7 +14,7 @@
         <button mat-icon-button (click)="panelService.updateLesson()">
           <mat-icon>save</mat-icon>
         </button>
-        <button mat-icon-button>
+        <button (click)="panelService.deleteLesson()" mat-icon-button>
           <mat-icon>delete</mat-icon>
         </button>
        </ng-container>

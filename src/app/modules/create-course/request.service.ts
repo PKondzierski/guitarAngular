@@ -62,4 +62,13 @@ export class RequestService {
   changeCourseStatus(myCourseDto: MyCourseModel) {
     return this.http.patch(AppSettings.API_ENDPOINT+'course/status',myCourseDto);
   }
+
+  deleteLesson(lesson: LessonModel) {
+    return this.http.delete(AppSettings.API_ENDPOINT+'create-course/lesson', {body: lesson});
+  }
+  
+  deleteSection(section: SectionModel) {
+    return this.http.delete(AppSettings.API_ENDPOINT+'create-course/section', {body: section});
+
+  }
 }

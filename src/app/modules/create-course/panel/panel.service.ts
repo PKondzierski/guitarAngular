@@ -31,6 +31,13 @@ export class PanelService {
       this.chords.next(lesson.chords);
       this.referenceLessons.next(lesson.references);
     })
+  }
 
+  deleteLesson() {
+    const actualLesson = this.actualLesson.value as LessonModel;
+    this.http.deleteLesson(actualLesson).subscribe(()=>{
+      this.actualLesson.next(null);
+      window.location.reload();
+    });
   }
 }
