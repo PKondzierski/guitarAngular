@@ -314,9 +314,9 @@ export class VideoComponent implements OnInit, OnDestroy {
         (chordStartTime >= chord.startChordTime && chordStartTime < chord.endChordTime) ||
         (chordStartTime <= chord.startChordTime && chordEndTime > chord.startChordTime)
       ) {
-        if (this.actualChord.value && this.actualChord.value.startChordTime != chord.startChordTime && this.actualChord.value.endChordTime != chord.endChordTime) {
+        // if (this.actualChord.value && this.actualChord.value.startChordTime != chord.startChordTime && this.actualChord.value.endChordTime != chord.endChordTime) {
          chordExists = true;
-        }
+        // }
       }});
       return chordExists;
     }
